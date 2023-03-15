@@ -1,0 +1,6 @@
+framework module Pods_GetonboardTests {
+  umbrella header "Pods-GetonboardTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

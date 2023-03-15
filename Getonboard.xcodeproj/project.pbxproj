@@ -28,6 +28,9 @@
 		14F66C6229C1241200B7CC75 /* DatumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6129C1241200B7CC75 /* DatumModel.swift */; };
 		14F66C6529C1246F00B7CC75 /* AttributesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6429C1246F00B7CC75 /* AttributesModel.swift */; };
 		14F66C6729C20D1A00B7CC75 /* CompanyPresenterDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6629C20D1A00B7CC75 /* CompanyPresenterDelegateProtocol.swift */; };
+		38735B9F2859DAAF97011202 /* Pods_Getonboard_GetonboardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC6071A8B5C3EDAE389D131 /* Pods_Getonboard_GetonboardUITests.framework */; };
+		5767546BAFFAAB33628AE787 /* Pods_Getonboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99041B6DA2CB2A84543C5A2 /* Pods_Getonboard.framework */; };
+		E4B85F577281ABCCCEBFA347 /* Pods_GetonboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4ABA07C19B9C4CE5D294DBC /* Pods_GetonboardTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E87CC0DA596D6E91519FE3B /* Pods-Getonboard-GetonboardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getonboard-GetonboardUITests.debug.xcconfig"; path = "Target Support Files/Pods-Getonboard-GetonboardUITests/Pods-Getonboard-GetonboardUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		14F66C0B29C0B35E00B7CC75 /* Getonboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getonboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F66C0E29C0B35E00B7CC75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14F66C1029C0B35E00B7CC75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +77,14 @@
 		14F66C6129C1241200B7CC75 /* DatumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatumModel.swift; sourceTree = "<group>"; };
 		14F66C6429C1246F00B7CC75 /* AttributesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesModel.swift; sourceTree = "<group>"; };
 		14F66C6629C20D1A00B7CC75 /* CompanyPresenterDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPresenterDelegateProtocol.swift; sourceTree = "<group>"; };
+		417A6703A4080D5FB912C4FA /* Pods-Getonboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getonboard.release.xcconfig"; path = "Target Support Files/Pods-Getonboard/Pods-Getonboard.release.xcconfig"; sourceTree = "<group>"; };
+		95751696B37B1CDE26D5A7BA /* Pods-GetonboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetonboardTests.debug.xcconfig"; path = "Target Support Files/Pods-GetonboardTests/Pods-GetonboardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AAC264BD88760B34353FBD7E /* Pods-GetonboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetonboardTests.release.xcconfig"; path = "Target Support Files/Pods-GetonboardTests/Pods-GetonboardTests.release.xcconfig"; sourceTree = "<group>"; };
+		C69DA2A433D4A0DB25AD622A /* Pods-Getonboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getonboard.debug.xcconfig"; path = "Target Support Files/Pods-Getonboard/Pods-Getonboard.debug.xcconfig"; sourceTree = "<group>"; };
+		C99041B6DA2CB2A84543C5A2 /* Pods_Getonboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Getonboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC6071A8B5C3EDAE389D131 /* Pods_Getonboard_GetonboardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Getonboard_GetonboardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE416ED380ADF8FF76F2F71 /* Pods-Getonboard-GetonboardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getonboard-GetonboardUITests.release.xcconfig"; path = "Target Support Files/Pods-Getonboard-GetonboardUITests/Pods-Getonboard-GetonboardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F4ABA07C19B9C4CE5D294DBC /* Pods_GetonboardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetonboardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5767546BAFFAAB33628AE787 /* Pods_Getonboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B85F577281ABCCCEBFA347 /* Pods_GetonboardTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,12 +108,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38735B9F2859DAAF97011202 /* Pods_Getonboard_GetonboardUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DCD7AC3AFEF5FE3126B4DEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C69DA2A433D4A0DB25AD622A /* Pods-Getonboard.debug.xcconfig */,
+				417A6703A4080D5FB912C4FA /* Pods-Getonboard.release.xcconfig */,
+				0E87CC0DA596D6E91519FE3B /* Pods-Getonboard-GetonboardUITests.debug.xcconfig */,
+				EEE416ED380ADF8FF76F2F71 /* Pods-Getonboard-GetonboardUITests.release.xcconfig */,
+				95751696B37B1CDE26D5A7BA /* Pods-GetonboardTests.debug.xcconfig */,
+				AAC264BD88760B34353FBD7E /* Pods-GetonboardTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		14F66C0229C0B35E00B7CC75 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +136,8 @@
 				14F66C2429C0B36000B7CC75 /* GetonboardTests */,
 				14F66C2E29C0B36000B7CC75 /* GetonboardUITests */,
 				14F66C0C29C0B35E00B7CC75 /* Products */,
+				0DCD7AC3AFEF5FE3126B4DEA /* Pods */,
+				5D41F2ECD0367EFD3241CB83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -267,6 +298,16 @@
 			path = CompanyModel;
 			sourceTree = "<group>";
 		};
+		5D41F2ECD0367EFD3241CB83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C99041B6DA2CB2A84543C5A2 /* Pods_Getonboard.framework */,
+				DFC6071A8B5C3EDAE389D131 /* Pods_Getonboard_GetonboardUITests.framework */,
+				F4ABA07C19B9C4CE5D294DBC /* Pods_GetonboardTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -274,9 +315,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14F66C3529C0B36000B7CC75 /* Build configuration list for PBXNativeTarget "Getonboard" */;
 			buildPhases = (
+				23A00930A821DAE55C61CDF3 /* [CP] Check Pods Manifest.lock */,
 				14F66C0729C0B35E00B7CC75 /* Sources */,
 				14F66C0829C0B35E00B7CC75 /* Frameworks */,
 				14F66C0929C0B35E00B7CC75 /* Resources */,
+				CC9B5A21DB627CA0AECE178B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,6 +334,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14F66C3829C0B36000B7CC75 /* Build configuration list for PBXNativeTarget "GetonboardTests" */;
 			buildPhases = (
+				F86B8861F574EA32F91F939D /* [CP] Check Pods Manifest.lock */,
 				14F66C1D29C0B36000B7CC75 /* Sources */,
 				14F66C1E29C0B36000B7CC75 /* Frameworks */,
 				14F66C1F29C0B36000B7CC75 /* Resources */,
@@ -309,9 +353,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14F66C3B29C0B36000B7CC75 /* Build configuration list for PBXNativeTarget "GetonboardUITests" */;
 			buildPhases = (
+				A154664979F9D10BD87C0F5D /* [CP] Check Pods Manifest.lock */,
 				14F66C2729C0B36000B7CC75 /* Sources */,
 				14F66C2829C0B36000B7CC75 /* Frameworks */,
 				14F66C2929C0B36000B7CC75 /* Resources */,
+				288F6496EDF64B41781D775F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -392,6 +438,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23A00930A821DAE55C61CDF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Getonboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		288F6496EDF64B41781D775F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Getonboard-GetonboardUITests/Pods-Getonboard-GetonboardUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Getonboard-GetonboardUITests/Pods-Getonboard-GetonboardUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Getonboard-GetonboardUITests/Pods-Getonboard-GetonboardUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A154664979F9D10BD87C0F5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Getonboard-GetonboardUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC9B5A21DB627CA0AECE178B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Getonboard/Pods-Getonboard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Getonboard/Pods-Getonboard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Getonboard/Pods-Getonboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F86B8861F574EA32F91F939D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GetonboardTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14F66C0729C0B35E00B7CC75 /* Sources */ = {
@@ -584,6 +733,7 @@
 		};
 		14F66C3629C0B36000B7CC75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C69DA2A433D4A0DB25AD622A /* Pods-Getonboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -612,6 +762,7 @@
 		};
 		14F66C3729C0B36000B7CC75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 417A6703A4080D5FB912C4FA /* Pods-Getonboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -640,6 +791,7 @@
 		};
 		14F66C3929C0B36000B7CC75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95751696B37B1CDE26D5A7BA /* Pods-GetonboardTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -660,6 +812,7 @@
 		};
 		14F66C3A29C0B36000B7CC75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAC264BD88760B34353FBD7E /* Pods-GetonboardTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -680,6 +833,7 @@
 		};
 		14F66C3C29C0B36000B7CC75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E87CC0DA596D6E91519FE3B /* Pods-Getonboard-GetonboardUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -698,6 +852,7 @@
 		};
 		14F66C3D29C0B36000B7CC75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE416ED380ADF8FF76F2F71 /* Pods-Getonboard-GetonboardUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

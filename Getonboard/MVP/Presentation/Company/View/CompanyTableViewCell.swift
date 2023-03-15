@@ -1,4 +1,5 @@
 import UIKit
+import Kingfisher
 
 class CompanyTableViewCell: UITableViewCell {
     
@@ -64,5 +65,7 @@ class CompanyTableViewCell: UITableViewCell {
     func setCellCompanyValue(model: AttributesModel){
         self.nameOfCompany.text = model.name
         self.countryOfCompany.text = model.country
+        guard let url = URL(string: model.logo ) else {return}
+        self.logoOfCompany.kf.setImage(with: url)
     }
 }
