@@ -11,8 +11,8 @@ extension CompanyTableViewDataSource: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CompanyTableViewCell", for: indexPath) as? CompanyTableViewCell, let viewController = viewController else {return UITableViewCell()}
-        cell.setCellCompanyValue(model: (viewController.company?.data[indexPath.row].attributes)!)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CompanyTableViewCell", for: indexPath) as? CompanyTableViewCell, let viewController = viewController, let model = viewController.company?.data[indexPath.row].attributes else {return UITableViewCell()}
+        cell.setCellCompanyValue(model: model)
         return cell
     }
 }

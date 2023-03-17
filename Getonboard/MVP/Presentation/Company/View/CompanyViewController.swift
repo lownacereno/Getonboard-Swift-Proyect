@@ -25,6 +25,7 @@ class CompanyViewController: UIViewController, CompanyPresenterDelegateProtocol{
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
         self.navigationItem.title = "Compañías Asociadas"
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.init(red: 14/255.0, green: 131/255.0, blue: 136/255.0, alpha: 1)]
         view.backgroundColor = .white
         presenter.setViewDelegate(delegate: self)
         presenter.getCompanies()

@@ -28,6 +28,14 @@
 		14F66C6229C1241200B7CC75 /* DatumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6129C1241200B7CC75 /* DatumModel.swift */; };
 		14F66C6529C1246F00B7CC75 /* AttributesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6429C1246F00B7CC75 /* AttributesModel.swift */; };
 		14F66C6729C20D1A00B7CC75 /* CompanyPresenterDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6629C20D1A00B7CC75 /* CompanyPresenterDelegateProtocol.swift */; };
+		14F66C6929C4C8AA00B7CC75 /* CategoryTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6829C4C8AA00B7CC75 /* CategoryTableViewDataSource.swift */; };
+		14F66C6B29C4C8BB00B7CC75 /* CategoryTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6A29C4C8BB00B7CC75 /* CategoryTableViewDelegate.swift */; };
+		14F66C6D29C4C93100B7CC75 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6C29C4C93100B7CC75 /* CategoryTableViewCell.swift */; };
+		14F66C6F29C4CA3F00B7CC75 /* CategoryViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6E29C4CA3F00B7CC75 /* CategoryViewPresenter.swift */; };
+		14F66C7129C4CA6200B7CC75 /* CategoryPresenterDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C7029C4CA6200B7CC75 /* CategoryPresenterDelegateProtocol.swift */; };
+		14F66C7429C4CD0B00B7CC75 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C7329C4CD0B00B7CC75 /* CategoryModel.swift */; };
+		14F66C7829C52E7C00B7CC75 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C7729C52E7C00B7CC75 /* JobModel.swift */; };
+		14F66C7D29C5317700B7CC75 /* CategoryDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C7C29C5317700B7CC75 /* CategoryDetailModel.swift */; };
 		38735B9F2859DAAF97011202 /* Pods_Getonboard_GetonboardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC6071A8B5C3EDAE389D131 /* Pods_Getonboard_GetonboardUITests.framework */; };
 		5767546BAFFAAB33628AE787 /* Pods_Getonboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99041B6DA2CB2A84543C5A2 /* Pods_Getonboard.framework */; };
 		E4B85F577281ABCCCEBFA347 /* Pods_GetonboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4ABA07C19B9C4CE5D294DBC /* Pods_GetonboardTests.framework */; };
@@ -77,6 +85,14 @@
 		14F66C6129C1241200B7CC75 /* DatumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatumModel.swift; sourceTree = "<group>"; };
 		14F66C6429C1246F00B7CC75 /* AttributesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesModel.swift; sourceTree = "<group>"; };
 		14F66C6629C20D1A00B7CC75 /* CompanyPresenterDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPresenterDelegateProtocol.swift; sourceTree = "<group>"; };
+		14F66C6829C4C8AA00B7CC75 /* CategoryTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewDataSource.swift; sourceTree = "<group>"; };
+		14F66C6A29C4C8BB00B7CC75 /* CategoryTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewDelegate.swift; sourceTree = "<group>"; };
+		14F66C6C29C4C93100B7CC75 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		14F66C6E29C4CA3F00B7CC75 /* CategoryViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewPresenter.swift; sourceTree = "<group>"; };
+		14F66C7029C4CA6200B7CC75 /* CategoryPresenterDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenterDelegateProtocol.swift; sourceTree = "<group>"; };
+		14F66C7329C4CD0B00B7CC75 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		14F66C7729C52E7C00B7CC75 /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
+		14F66C7C29C5317700B7CC75 /* CategoryDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailModel.swift; sourceTree = "<group>"; };
 		417A6703A4080D5FB912C4FA /* Pods-Getonboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getonboard.release.xcconfig"; path = "Target Support Files/Pods-Getonboard/Pods-Getonboard.release.xcconfig"; sourceTree = "<group>"; };
 		95751696B37B1CDE26D5A7BA /* Pods-GetonboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetonboardTests.debug.xcconfig"; path = "Target Support Files/Pods-GetonboardTests/Pods-GetonboardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AAC264BD88760B34353FBD7E /* Pods-GetonboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetonboardTests.release.xcconfig"; path = "Target Support Files/Pods-GetonboardTests/Pods-GetonboardTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,7 +141,6 @@
 				95751696B37B1CDE26D5A7BA /* Pods-GetonboardTests.debug.xcconfig */,
 				AAC264BD88760B34353FBD7E /* Pods-GetonboardTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -251,8 +266,8 @@
 		14F66C5129C0EB6B00B7CC75 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				14F66C5329C0EB7E00B7CC75 /* Presenter */,
-				14F66C5229C0EB7700B7CC75 /* View */,
+				14F66C7A29C530AB00B7CC75 /* CategoryDetail */,
+				14F66C7929C5308D00B7CC75 /* CategoryList */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -261,6 +276,9 @@
 			isa = PBXGroup;
 			children = (
 				14F66C4329C0BB1900B7CC75 /* CategoriesViewController.swift */,
+				14F66C6829C4C8AA00B7CC75 /* CategoryTableViewDataSource.swift */,
+				14F66C6A29C4C8BB00B7CC75 /* CategoryTableViewDelegate.swift */,
+				14F66C6C29C4C93100B7CC75 /* CategoryTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +286,8 @@
 		14F66C5329C0EB7E00B7CC75 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				14F66C6E29C4CA3F00B7CC75 /* CategoryViewPresenter.swift */,
+				14F66C7029C4CA6200B7CC75 /* CategoryPresenterDelegateProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -283,6 +303,8 @@
 		14F66C5529C0EC7C00B7CC75 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				14F66C7B29C5315200B7CC75 /* CategoryDetailModel */,
+				14F66C7229C4CCA600B7CC75 /* CategoryModel */,
 				14F66C6029C123FC00B7CC75 /* CompanyModel */,
 			);
 			path = Models;
@@ -296,6 +318,39 @@
 				14F66C6429C1246F00B7CC75 /* AttributesModel.swift */,
 			);
 			path = CompanyModel;
+			sourceTree = "<group>";
+		};
+		14F66C7229C4CCA600B7CC75 /* CategoryModel */ = {
+			isa = PBXGroup;
+			children = (
+				14F66C7329C4CD0B00B7CC75 /* CategoryModel.swift */,
+				14F66C7729C52E7C00B7CC75 /* JobModel.swift */,
+			);
+			path = CategoryModel;
+			sourceTree = "<group>";
+		};
+		14F66C7929C5308D00B7CC75 /* CategoryList */ = {
+			isa = PBXGroup;
+			children = (
+				14F66C5229C0EB7700B7CC75 /* View */,
+				14F66C5329C0EB7E00B7CC75 /* Presenter */,
+			);
+			path = CategoryList;
+			sourceTree = "<group>";
+		};
+		14F66C7A29C530AB00B7CC75 /* CategoryDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CategoryDetail;
+			sourceTree = "<group>";
+		};
+		14F66C7B29C5315200B7CC75 /* CategoryDetailModel */ = {
+			isa = PBXGroup;
+			children = (
+				14F66C7C29C5317700B7CC75 /* CategoryDetailModel.swift */,
+			);
+			path = CategoryDetailModel;
 			sourceTree = "<group>";
 		};
 		5D41F2ECD0367EFD3241CB83 /* Frameworks */ = {
@@ -550,18 +605,26 @@
 				14F66C3F29C0B38B00B7CC75 /* SplashScreen.swift in Sources */,
 				14F66C1329C0B35E00B7CC75 /* ViewController.swift in Sources */,
 				14F66C6529C1246F00B7CC75 /* AttributesModel.swift in Sources */,
+				14F66C6F29C4CA3F00B7CC75 /* CategoryViewPresenter.swift in Sources */,
+				14F66C7429C4CD0B00B7CC75 /* CategoryModel.swift in Sources */,
 				14F66C4A29C0BF1400B7CC75 /* CompanyTableViewDataSource.swift in Sources */,
+				14F66C7129C4CA6200B7CC75 /* CategoryPresenterDelegateProtocol.swift in Sources */,
 				14F66C4429C0BB1900B7CC75 /* CategoriesViewController.swift in Sources */,
 				14F66C6229C1241200B7CC75 /* DatumModel.swift in Sources */,
 				14F66C5B29C0F28D00B7CC75 /* CompanyTableViewCell.swift in Sources */,
 				14F66C6729C20D1A00B7CC75 /* CompanyPresenterDelegateProtocol.swift in Sources */,
+				14F66C6929C4C8AA00B7CC75 /* CategoryTableViewDataSource.swift in Sources */,
+				14F66C7D29C5317700B7CC75 /* CategoryDetailModel.swift in Sources */,
 				14F66C0F29C0B35E00B7CC75 /* AppDelegate.swift in Sources */,
 				14F66C4129C0B8D400B7CC75 /* TabBarController.swift in Sources */,
 				14F66C5929C0F20D00B7CC75 /* CompanyModel.swift in Sources */,
 				14F66C4629C0BB2C00B7CC75 /* CompanyViewController.swift in Sources */,
 				14F66C4829C0BF0500B7CC75 /* CompanyTableViewDelegate.swift in Sources */,
+				14F66C7829C52E7C00B7CC75 /* JobModel.swift in Sources */,
+				14F66C6B29C4C8BB00B7CC75 /* CategoryTableViewDelegate.swift in Sources */,
 				14F66C1129C0B35E00B7CC75 /* SceneDelegate.swift in Sources */,
 				14F66C5F29C10C0100B7CC75 /* CompanyViewPresenter.swift in Sources */,
+				14F66C6D29C4C93100B7CC75 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ class TabBarController: UITabBarController {
     }
     
     private func setupTabBar() {
-        let categoryvc = UINavigationController(rootViewController: CategoriesViewController())
+        let categoryvc = UINavigationController(rootViewController: CategoryViewController(dataSourceTable: CategoryTableViewDataSource(), delegateTable: CategoryTableViewDelegate()))
         let companyVC = UINavigationController(rootViewController: CompanyViewController(dataSourceTable: CompanyTableViewDataSource(), delegateTable: CompanyTableViewDelegate()))
         categoryvc.tabBarItem.image = UIImage(systemName: "square.fill.text.grid.1x2")
         companyVC.tabBarItem.image = UIImage(systemName: "building.2.crop.circle")
