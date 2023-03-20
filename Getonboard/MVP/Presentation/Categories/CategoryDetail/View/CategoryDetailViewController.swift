@@ -1,6 +1,6 @@
 import UIKit
 
-class CategoryDetailViewController: UIViewController, CategoryDetailProtocol{
+class CategoryDetailViewController: UIViewController{
     
     private let workOffersTableView = UITableView()
     var categoryID: String = ""
@@ -51,6 +51,9 @@ class CategoryDetailViewController: UIViewController, CategoryDetailProtocol{
         workOffersTableView.register(CategoryDetailTableViewCell.self, forCellReuseIdentifier: "CategoryDetailTableViewCell" )
         view.addSubview(workOffersTableView)
     }
+}
+
+extension CategoryDetailViewController: CategoryDetailProtocol{
     
     func presentCategoryDetail(categoryDetail: CategoryDetailModel) {
         self.workOffers = categoryDetail

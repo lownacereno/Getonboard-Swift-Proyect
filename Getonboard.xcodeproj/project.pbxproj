@@ -417,9 +417,17 @@
 		14F66C8F29C7F9A000B7CC75 /* JobOffers */ = {
 			isa = PBXGroup;
 			children = (
-				14F66C9029C7FA5100B7CC75 /* JobRequirementsViewController.swift */,
+				14F66C9629C87D1100B7CC75 /* View */,
 			);
 			path = JobOffers;
+			sourceTree = "<group>";
+		};
+		14F66C9629C87D1100B7CC75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14F66C9029C7FA5100B7CC75 /* JobRequirementsViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		5D41F2ECD0367EFD3241CB83 /* Frameworks */ = {

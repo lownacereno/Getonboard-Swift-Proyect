@@ -62,8 +62,9 @@ class JobRequirementsViewController: UIViewController{
     }
     
     private func setJobSetup(){
-        jobTitle.text.self = jobRequirements?.title
-        jobDescription.text.self = jobRequirements?.description
+        guard let jobModel = jobRequirements else {return}
+        jobTitle.text.self = jobModel.title
+        jobDescription.text.self = jobModel.description.replacingOccurrences(of: "<ul><li>", with: "")
  
     }
 }

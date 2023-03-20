@@ -1,6 +1,6 @@
 import UIKit
 
-class CategoryViewController: UIViewController, CategoryPresenterProtocol{
+class CategoryViewController: UIViewController{
     
     var categories : CategoryModel?
     
@@ -56,6 +56,10 @@ class CategoryViewController: UIViewController, CategoryPresenterProtocol{
         ])
     }
     
+}
+
+extension CategoryViewController: CategoryPresenterProtocol{
+    
     func presentCategories(categories: CategoryModel) {
         self.categories = categories
         DispatchQueue.main.async {
@@ -69,6 +73,8 @@ class CategoryViewController: UIViewController, CategoryPresenterProtocol{
         categoryDetail.categoryID = model
         navigationController?.pushViewController(categoryDetail, animated: true)
     }
+
+    
 }
 
 

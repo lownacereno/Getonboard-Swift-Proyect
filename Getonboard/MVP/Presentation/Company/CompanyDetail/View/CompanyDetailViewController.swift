@@ -62,7 +62,8 @@ class CompanyDetailViewController: UIViewController{
     }
     
     private func setCompanyDescription(){
-        nameOfCompany.text.self = company?.name
-        companyDescription.text.self = company?.description
+        guard let company = company else {return}
+        nameOfCompany.text.self = company.name
+        companyDescription.text.self = company.description
     }
 }
