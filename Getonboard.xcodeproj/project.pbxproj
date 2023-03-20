@@ -40,6 +40,9 @@
 		14F66C8629C5410100B7CC75 /* CategoryDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C8529C5410100B7CC75 /* CategoryDetailProtocol.swift */; };
 		14F66C8829C6054F00B7CC75 /* CompanyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C8729C6054F00B7CC75 /* CompanyDetailViewController.swift */; };
 		14F66C8E29C75A4B00B7CC75 /* CategoryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C8D29C75A4B00B7CC75 /* CategoryDetailTableViewCell.swift */; };
+		14F66C9129C7FA5100B7CC75 /* JobRequirementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C9029C7FA5100B7CC75 /* JobRequirementsViewController.swift */; };
+		14F66C9329C7FB0200B7CC75 /* CategoryDetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C9229C7FB0200B7CC75 /* CategoryDetailDataSource.swift */; };
+		14F66C9529C7FB1000B7CC75 /* CategoryDetailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C9429C7FB1000B7CC75 /* CategoryDetailDelegate.swift */; };
 		38735B9F2859DAAF97011202 /* Pods_Getonboard_GetonboardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC6071A8B5C3EDAE389D131 /* Pods_Getonboard_GetonboardUITests.framework */; };
 		5767546BAFFAAB33628AE787 /* Pods_Getonboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99041B6DA2CB2A84543C5A2 /* Pods_Getonboard.framework */; };
 		E4B85F577281ABCCCEBFA347 /* Pods_GetonboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4ABA07C19B9C4CE5D294DBC /* Pods_GetonboardTests.framework */; };
@@ -101,6 +104,9 @@
 		14F66C8529C5410100B7CC75 /* CategoryDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailProtocol.swift; sourceTree = "<group>"; };
 		14F66C8729C6054F00B7CC75 /* CompanyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailViewController.swift; sourceTree = "<group>"; };
 		14F66C8D29C75A4B00B7CC75 /* CategoryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailTableViewCell.swift; sourceTree = "<group>"; };
+		14F66C9029C7FA5100B7CC75 /* JobRequirementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobRequirementsViewController.swift; sourceTree = "<group>"; };
+		14F66C9229C7FB0200B7CC75 /* CategoryDetailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailDataSource.swift; sourceTree = "<group>"; };
+		14F66C9429C7FB1000B7CC75 /* CategoryDetailDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailDelegate.swift; sourceTree = "<group>"; };
 		417A6703A4080D5FB912C4FA /* Pods-Getonboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getonboard.release.xcconfig"; path = "Target Support Files/Pods-Getonboard/Pods-Getonboard.release.xcconfig"; sourceTree = "<group>"; };
 		95751696B37B1CDE26D5A7BA /* Pods-GetonboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetonboardTests.debug.xcconfig"; path = "Target Support Files/Pods-GetonboardTests/Pods-GetonboardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AAC264BD88760B34353FBD7E /* Pods-GetonboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetonboardTests.release.xcconfig"; path = "Target Support Files/Pods-GetonboardTests/Pods-GetonboardTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -263,6 +269,7 @@
 		14F66C5129C0EB6B00B7CC75 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				14F66C8F29C7F9A000B7CC75 /* JobOffers */,
 				14F66C7A29C530AB00B7CC75 /* CategoryDetail */,
 				14F66C7929C5308D00B7CC75 /* CategoryList */,
 			);
@@ -356,6 +363,8 @@
 			children = (
 				14F66C7F29C53F4C00B7CC75 /* CategoryDetailViewController.swift */,
 				14F66C8D29C75A4B00B7CC75 /* CategoryDetailTableViewCell.swift */,
+				14F66C9229C7FB0200B7CC75 /* CategoryDetailDataSource.swift */,
+				14F66C9429C7FB1000B7CC75 /* CategoryDetailDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -403,6 +412,14 @@
 				14F66C8729C6054F00B7CC75 /* CompanyDetailViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		14F66C8F29C7F9A000B7CC75 /* JobOffers */ = {
+			isa = PBXGroup;
+			children = (
+				14F66C9029C7FA5100B7CC75 /* JobRequirementsViewController.swift */,
+			);
+			path = JobOffers;
 			sourceTree = "<group>";
 		};
 		5D41F2ECD0367EFD3241CB83 /* Frameworks */ = {
@@ -667,6 +684,7 @@
 				14F66C8029C53F4C00B7CC75 /* CategoryDetailViewController.swift in Sources */,
 				14F66C5B29C0F28D00B7CC75 /* CompanyTableViewCell.swift in Sources */,
 				14F66C6729C20D1A00B7CC75 /* CompanyPresenterProtocol.swift in Sources */,
+				14F66C9529C7FB1000B7CC75 /* CategoryDetailDelegate.swift in Sources */,
 				14F66C6929C4C8AA00B7CC75 /* CategoryTableViewDataSource.swift in Sources */,
 				14F66C7D29C5317700B7CC75 /* CategoryDetailModel.swift in Sources */,
 				14F66C0F29C0B35E00B7CC75 /* AppDelegate.swift in Sources */,
@@ -674,10 +692,12 @@
 				14F66C4129C0B8D400B7CC75 /* TabBarController.swift in Sources */,
 				14F66C5929C0F20D00B7CC75 /* CompanyModel.swift in Sources */,
 				14F66C4629C0BB2C00B7CC75 /* CompanyViewController.swift in Sources */,
+				14F66C9329C7FB0200B7CC75 /* CategoryDetailDataSource.swift in Sources */,
 				14F66C8629C5410100B7CC75 /* CategoryDetailProtocol.swift in Sources */,
 				14F66C8429C53FC100B7CC75 /* CategoryDetailPresenter.swift in Sources */,
 				14F66C4829C0BF0500B7CC75 /* CompanyTableViewDelegate.swift in Sources */,
 				14F66C6B29C4C8BB00B7CC75 /* CategoryTableViewDelegate.swift in Sources */,
+				14F66C9129C7FA5100B7CC75 /* JobRequirementsViewController.swift in Sources */,
 				14F66C1129C0B35E00B7CC75 /* SceneDelegate.swift in Sources */,
 				14F66C5F29C10C0100B7CC75 /* CompanyViewPresenter.swift in Sources */,
 				14F66C6D29C4C93100B7CC75 /* CategoryTableViewCell.swift in Sources */,

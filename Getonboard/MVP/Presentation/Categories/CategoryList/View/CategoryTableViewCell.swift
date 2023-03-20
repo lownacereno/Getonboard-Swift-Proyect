@@ -35,8 +35,8 @@ class CategoryTableViewCell: UITableViewCell {
     }
     
     private func nameCategoryCell(){
-        nameOfCategory.font = .boldSystemFont(ofSize: 20)
-        nameOfCategory.textColor = .init(red: 14/255.0, green: 131/255.0, blue: 136/255.0, alpha: 1)
+        nameOfCategory.font = .boldSystemFont(ofSize: 18)
+        nameOfCategory.textColor = .black
         nameOfCategory.translatesAutoresizingMaskIntoConstraints = false
         nameOfCategory.numberOfLines = 0
         nameOfCategory.contentMode = .scaleAspectFit

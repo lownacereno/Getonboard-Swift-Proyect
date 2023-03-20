@@ -4,8 +4,22 @@ class CategoryDetailViewController: UIViewController, CategoryDetailProtocol{
     
     private let workOffersTableView = UITableView()
     var categoryID: String = ""
+    private let dataSource : CategoryDetailDataSource?
+    private let delegate : CategoryDetailDelegate?
     var workOffers : CategoryDetailModel?
     let presenter = CategoryDetailPresenter()
+    
+    init(dataSourceTable: CategoryDetailDataSource, delegateTable: CategoryDetailDelegate){
+        self.dataSource = dataSourceTable
+        self.delegate = delegateTable
+        super.init(nibName: nil, bundle: nil)
+        self.dataSource?.viewController = self
+        self.delegate?.viewController = self
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +46,8 @@ class CategoryDetailViewController: UIViewController, CategoryDetailProtocol{
     
     private func initTableView() {
         workOffersTableView.translatesAutoresizingMaskIntoConstraints = false
-        workOffersTableView.dataSource = self
-        workOffersTableView.delegate = self
+        workOffersTableView.dataSource = dataSource
+        workOffersTableView.delegate = delegate
         workOffersTableView.register(CategoryDetailTableViewCell.self, forCellReuseIdentifier: "CategoryDetailTableViewCell" )
         view.addSubview(workOffersTableView)
     }
@@ -44,23 +58,12 @@ class CategoryDetailViewController: UIViewController, CategoryDetailProtocol{
             self.workOffersTableView.reloadData()
         }
     }
-}
-
-extension CategoryDetailViewController : UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return workOffers?.data.count ?? 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryDetailTableViewCell", for: indexPath) as? CategoryDetailTableViewCell, let model = workOffers?.data[indexPath.row].attributes else {return UITableViewCell()}
-        cell.setCellValue(model: model)
-        return cell
+    func goToDetail(indexPath: IndexPath){
+        guard let model = workOffers?.data[indexPath.row].attributes  else {return}
+        let categoryDetail = JobRequirementsViewController()
+        categoryDetail.jobRequirements = model
+        present(categoryDetail, animated: true)
     }
 }
 
-extension CategoryDetailViewController : UITableViewDelegate{
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("celda pulsada")
-    }
-}

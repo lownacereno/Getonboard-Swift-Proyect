@@ -65,7 +65,7 @@ class CategoryViewController: UIViewController, CategoryPresenterProtocol{
     
     func goToDetail(indexPath: IndexPath){
         guard let model = categories?.data[indexPath.row].id else {return}
-        let categoryDetail = CategoryDetailViewController()
+        let categoryDetail = CategoryDetailViewController(dataSourceTable: CategoryDetailDataSource(), delegateTable: CategoryDetailDelegate())
         categoryDetail.categoryID = model
         navigationController?.pushViewController(categoryDetail, animated: true)
     }
