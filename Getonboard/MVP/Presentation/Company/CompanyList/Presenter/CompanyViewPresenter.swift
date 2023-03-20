@@ -2,7 +2,7 @@ import UIKit
 
 class CompanyViewPresenter{
     
-    weak var delegate : CompanyPresenterDelegateProtocol?
+    weak var delegate : CompanyPresenterProtocol?
     
     public func getCompanies(){
         guard let url = URL(string: "https://www.getonbrd.com/api/v0/companies?per_page=10&page=1") else { return }
@@ -21,7 +21,7 @@ class CompanyViewPresenter{
         task.resume()
     }
    
-    public func setViewDelegate(delegate: CompanyPresenterDelegateProtocol){
+    public func setViewDelegate(delegate: CompanyPresenterProtocol){
         self.delegate = delegate
     }
 }

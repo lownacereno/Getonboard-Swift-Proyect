@@ -1,6 +1,6 @@
 import UIKit
 
-class CategoryViewController: UIViewController, CategoryPresenterDelegateProtocol{
+class CategoryViewController: UIViewController, CategoryPresenterProtocol{
     
     var categories : CategoryModel?
     
@@ -10,21 +10,22 @@ class CategoryViewController: UIViewController, CategoryPresenterDelegateProtoco
     private let presenter = CategoryViewPresenter()
     
     init(dataSourceTable: CategoryTableViewDataSource, delegateTable: CategoryTableViewDelegate){
-            self.dataSource = dataSourceTable
-            self.delegate = delegateTable
-            super.init(nibName: nil, bundle: nil)
-            self.dataSource?.viewController = self
-            self.delegate?.viewController = self
-        }
-        
-        required init?(coder: NSCoder) {
-            fatalError("init(coder:) has not been implemented")
-        }
+        self.dataSource = dataSourceTable
+        self.delegate = delegateTable
+        super.init(nibName: nil, bundle: nil)
+        self.dataSource?.viewController = self
+        self.delegate?.viewController = self
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
         self.navigationItem.title = "Categorías de trabajo"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.init(red: 14/255.0, green: 131/255.0, blue: 136/255.0, alpha: 1)]
         view.backgroundColor = .white
         presenter.setViewDelegate(delegate: self)
@@ -47,7 +48,7 @@ class CategoryViewController: UIViewController, CategoryPresenterDelegateProtoco
     }
     
     private func tableViewConstraints(){
-            NSLayoutConstraint.activate([
+        NSLayoutConstraint.activate([
             categoryTableView.topAnchor.constraint(equalTo: view.topAnchor),
             categoryTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             categoryTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -61,5 +62,19 @@ class CategoryViewController: UIViewController, CategoryPresenterDelegateProtoco
             self.categoryTableView.reloadData()
         }
     }
+    
+    func goToDetail(indexPath: IndexPath){
+        guard let model = categories?.data[indexPath.row].id else {return}
+        let categoryDetail = CategoryDetailViewController()
+        categoryDetail.categoryID = model
+        navigationController?.pushViewController(categoryDetail, animated: true)
+    }
 }
+
+
+
+
+
+
+
 

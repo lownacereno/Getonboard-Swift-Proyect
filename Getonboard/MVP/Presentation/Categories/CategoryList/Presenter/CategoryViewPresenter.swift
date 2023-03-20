@@ -2,7 +2,7 @@ import UIKit
 
 class CategoryViewPresenter{
     
-    weak var delegate : CategoryPresenterDelegateProtocol?
+    weak var delegate : CategoryPresenterProtocol?
     
     public func getCategories(){
         guard let url = URL(string: "https://www.getonbrd.com/api/v0/categories?per_page=10&page=1") else { return }
@@ -21,7 +21,7 @@ class CategoryViewPresenter{
         task.resume()
     }
    
-    public func setViewDelegate(delegate: CategoryPresenterDelegateProtocol){
+    public func setViewDelegate(delegate: CategoryPresenterProtocol){
         self.delegate = delegate
     }
 }

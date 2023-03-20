@@ -27,15 +27,19 @@
 		14F66C5F29C10C0100B7CC75 /* CompanyViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C5E29C10C0100B7CC75 /* CompanyViewPresenter.swift */; };
 		14F66C6229C1241200B7CC75 /* DatumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6129C1241200B7CC75 /* DatumModel.swift */; };
 		14F66C6529C1246F00B7CC75 /* AttributesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6429C1246F00B7CC75 /* AttributesModel.swift */; };
-		14F66C6729C20D1A00B7CC75 /* CompanyPresenterDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6629C20D1A00B7CC75 /* CompanyPresenterDelegateProtocol.swift */; };
+		14F66C6729C20D1A00B7CC75 /* CompanyPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6629C20D1A00B7CC75 /* CompanyPresenterProtocol.swift */; };
 		14F66C6929C4C8AA00B7CC75 /* CategoryTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6829C4C8AA00B7CC75 /* CategoryTableViewDataSource.swift */; };
 		14F66C6B29C4C8BB00B7CC75 /* CategoryTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6A29C4C8BB00B7CC75 /* CategoryTableViewDelegate.swift */; };
 		14F66C6D29C4C93100B7CC75 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6C29C4C93100B7CC75 /* CategoryTableViewCell.swift */; };
 		14F66C6F29C4CA3F00B7CC75 /* CategoryViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6E29C4CA3F00B7CC75 /* CategoryViewPresenter.swift */; };
-		14F66C7129C4CA6200B7CC75 /* CategoryPresenterDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C7029C4CA6200B7CC75 /* CategoryPresenterDelegateProtocol.swift */; };
+		14F66C7129C4CA6200B7CC75 /* CategoryPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C7029C4CA6200B7CC75 /* CategoryPresenterProtocol.swift */; };
 		14F66C7429C4CD0B00B7CC75 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C7329C4CD0B00B7CC75 /* CategoryModel.swift */; };
-		14F66C7829C52E7C00B7CC75 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C7729C52E7C00B7CC75 /* JobModel.swift */; };
 		14F66C7D29C5317700B7CC75 /* CategoryDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C7C29C5317700B7CC75 /* CategoryDetailModel.swift */; };
+		14F66C8029C53F4C00B7CC75 /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C7F29C53F4C00B7CC75 /* CategoryDetailViewController.swift */; };
+		14F66C8429C53FC100B7CC75 /* CategoryDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C8329C53FC100B7CC75 /* CategoryDetailPresenter.swift */; };
+		14F66C8629C5410100B7CC75 /* CategoryDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C8529C5410100B7CC75 /* CategoryDetailProtocol.swift */; };
+		14F66C8829C6054F00B7CC75 /* CompanyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C8729C6054F00B7CC75 /* CompanyDetailViewController.swift */; };
+		14F66C8E29C75A4B00B7CC75 /* CategoryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C8D29C75A4B00B7CC75 /* CategoryDetailTableViewCell.swift */; };
 		38735B9F2859DAAF97011202 /* Pods_Getonboard_GetonboardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC6071A8B5C3EDAE389D131 /* Pods_Getonboard_GetonboardUITests.framework */; };
 		5767546BAFFAAB33628AE787 /* Pods_Getonboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99041B6DA2CB2A84543C5A2 /* Pods_Getonboard.framework */; };
 		E4B85F577281ABCCCEBFA347 /* Pods_GetonboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4ABA07C19B9C4CE5D294DBC /* Pods_GetonboardTests.framework */; };
@@ -84,15 +88,19 @@
 		14F66C5E29C10C0100B7CC75 /* CompanyViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewPresenter.swift; sourceTree = "<group>"; };
 		14F66C6129C1241200B7CC75 /* DatumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatumModel.swift; sourceTree = "<group>"; };
 		14F66C6429C1246F00B7CC75 /* AttributesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesModel.swift; sourceTree = "<group>"; };
-		14F66C6629C20D1A00B7CC75 /* CompanyPresenterDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPresenterDelegateProtocol.swift; sourceTree = "<group>"; };
+		14F66C6629C20D1A00B7CC75 /* CompanyPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPresenterProtocol.swift; sourceTree = "<group>"; };
 		14F66C6829C4C8AA00B7CC75 /* CategoryTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewDataSource.swift; sourceTree = "<group>"; };
 		14F66C6A29C4C8BB00B7CC75 /* CategoryTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewDelegate.swift; sourceTree = "<group>"; };
 		14F66C6C29C4C93100B7CC75 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		14F66C6E29C4CA3F00B7CC75 /* CategoryViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewPresenter.swift; sourceTree = "<group>"; };
-		14F66C7029C4CA6200B7CC75 /* CategoryPresenterDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenterDelegateProtocol.swift; sourceTree = "<group>"; };
+		14F66C7029C4CA6200B7CC75 /* CategoryPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenterProtocol.swift; sourceTree = "<group>"; };
 		14F66C7329C4CD0B00B7CC75 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
-		14F66C7729C52E7C00B7CC75 /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
 		14F66C7C29C5317700B7CC75 /* CategoryDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailModel.swift; sourceTree = "<group>"; };
+		14F66C7F29C53F4C00B7CC75 /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewController.swift; sourceTree = "<group>"; };
+		14F66C8329C53FC100B7CC75 /* CategoryDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailPresenter.swift; sourceTree = "<group>"; };
+		14F66C8529C5410100B7CC75 /* CategoryDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailProtocol.swift; sourceTree = "<group>"; };
+		14F66C8729C6054F00B7CC75 /* CompanyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailViewController.swift; sourceTree = "<group>"; };
+		14F66C8D29C75A4B00B7CC75 /* CategoryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailTableViewCell.swift; sourceTree = "<group>"; };
 		417A6703A4080D5FB912C4FA /* Pods-Getonboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getonboard.release.xcconfig"; path = "Target Support Files/Pods-Getonboard/Pods-Getonboard.release.xcconfig"; sourceTree = "<group>"; };
 		95751696B37B1CDE26D5A7BA /* Pods-GetonboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetonboardTests.debug.xcconfig"; path = "Target Support Files/Pods-GetonboardTests/Pods-GetonboardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AAC264BD88760B34353FBD7E /* Pods-GetonboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetonboardTests.release.xcconfig"; path = "Target Support Files/Pods-GetonboardTests/Pods-GetonboardTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -237,28 +245,17 @@
 		14F66C4E29C0EB1400B7CC75 /* Company */ = {
 			isa = PBXGroup;
 			children = (
-				14F66C5029C0EB4000B7CC75 /* Presenter */,
-				14F66C4F29C0EB3A00B7CC75 /* View */,
+				14F66C8929C6185500B7CC75 /* CompanyList */,
+				14F66C8A29C6185B00B7CC75 /* CompanyDetail */,
 			);
 			path = Company;
-			sourceTree = "<group>";
-		};
-		14F66C4F29C0EB3A00B7CC75 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				14F66C4529C0BB2C00B7CC75 /* CompanyViewController.swift */,
-				14F66C4929C0BF1400B7CC75 /* CompanyTableViewDataSource.swift */,
-				14F66C4729C0BF0500B7CC75 /* CompanyTableViewDelegate.swift */,
-				14F66C5A29C0F28D00B7CC75 /* CompanyTableViewCell.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		14F66C5029C0EB4000B7CC75 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				14F66C5E29C10C0100B7CC75 /* CompanyViewPresenter.swift */,
-				14F66C6629C20D1A00B7CC75 /* CompanyPresenterDelegateProtocol.swift */,
+				14F66C6629C20D1A00B7CC75 /* CompanyPresenterProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -287,7 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				14F66C6E29C4CA3F00B7CC75 /* CategoryViewPresenter.swift */,
-				14F66C7029C4CA6200B7CC75 /* CategoryPresenterDelegateProtocol.swift */,
+				14F66C7029C4CA6200B7CC75 /* CategoryPresenterProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -324,7 +321,6 @@
 			isa = PBXGroup;
 			children = (
 				14F66C7329C4CD0B00B7CC75 /* CategoryModel.swift */,
-				14F66C7729C52E7C00B7CC75 /* JobModel.swift */,
 			);
 			path = CategoryModel;
 			sourceTree = "<group>";
@@ -341,6 +337,8 @@
 		14F66C7A29C530AB00B7CC75 /* CategoryDetail */ = {
 			isa = PBXGroup;
 			children = (
+				14F66C8229C53FA100B7CC75 /* Presenter */,
+				14F66C7E29C53F2D00B7CC75 /* View */,
 			);
 			path = CategoryDetail;
 			sourceTree = "<group>";
@@ -351,6 +349,60 @@
 				14F66C7C29C5317700B7CC75 /* CategoryDetailModel.swift */,
 			);
 			path = CategoryDetailModel;
+			sourceTree = "<group>";
+		};
+		14F66C7E29C53F2D00B7CC75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14F66C7F29C53F4C00B7CC75 /* CategoryDetailViewController.swift */,
+				14F66C8D29C75A4B00B7CC75 /* CategoryDetailTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14F66C8229C53FA100B7CC75 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				14F66C8329C53FC100B7CC75 /* CategoryDetailPresenter.swift */,
+				14F66C8529C5410100B7CC75 /* CategoryDetailProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		14F66C8929C6185500B7CC75 /* CompanyList */ = {
+			isa = PBXGroup;
+			children = (
+				14F66C5029C0EB4000B7CC75 /* Presenter */,
+				14F66C8B29C6189C00B7CC75 /* View */,
+			);
+			path = CompanyList;
+			sourceTree = "<group>";
+		};
+		14F66C8A29C6185B00B7CC75 /* CompanyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				14F66C8C29C618B100B7CC75 /* View */,
+			);
+			path = CompanyDetail;
+			sourceTree = "<group>";
+		};
+		14F66C8B29C6189C00B7CC75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14F66C4529C0BB2C00B7CC75 /* CompanyViewController.swift */,
+				14F66C4929C0BF1400B7CC75 /* CompanyTableViewDataSource.swift */,
+				14F66C4729C0BF0500B7CC75 /* CompanyTableViewDelegate.swift */,
+				14F66C5A29C0F28D00B7CC75 /* CompanyTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14F66C8C29C618B100B7CC75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14F66C8729C6054F00B7CC75 /* CompanyDetailViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		5D41F2ECD0367EFD3241CB83 /* Frameworks */ = {
@@ -608,19 +660,23 @@
 				14F66C6F29C4CA3F00B7CC75 /* CategoryViewPresenter.swift in Sources */,
 				14F66C7429C4CD0B00B7CC75 /* CategoryModel.swift in Sources */,
 				14F66C4A29C0BF1400B7CC75 /* CompanyTableViewDataSource.swift in Sources */,
-				14F66C7129C4CA6200B7CC75 /* CategoryPresenterDelegateProtocol.swift in Sources */,
+				14F66C7129C4CA6200B7CC75 /* CategoryPresenterProtocol.swift in Sources */,
 				14F66C4429C0BB1900B7CC75 /* CategoriesViewController.swift in Sources */,
 				14F66C6229C1241200B7CC75 /* DatumModel.swift in Sources */,
+				14F66C8829C6054F00B7CC75 /* CompanyDetailViewController.swift in Sources */,
+				14F66C8029C53F4C00B7CC75 /* CategoryDetailViewController.swift in Sources */,
 				14F66C5B29C0F28D00B7CC75 /* CompanyTableViewCell.swift in Sources */,
-				14F66C6729C20D1A00B7CC75 /* CompanyPresenterDelegateProtocol.swift in Sources */,
+				14F66C6729C20D1A00B7CC75 /* CompanyPresenterProtocol.swift in Sources */,
 				14F66C6929C4C8AA00B7CC75 /* CategoryTableViewDataSource.swift in Sources */,
 				14F66C7D29C5317700B7CC75 /* CategoryDetailModel.swift in Sources */,
 				14F66C0F29C0B35E00B7CC75 /* AppDelegate.swift in Sources */,
+				14F66C8E29C75A4B00B7CC75 /* CategoryDetailTableViewCell.swift in Sources */,
 				14F66C4129C0B8D400B7CC75 /* TabBarController.swift in Sources */,
 				14F66C5929C0F20D00B7CC75 /* CompanyModel.swift in Sources */,
 				14F66C4629C0BB2C00B7CC75 /* CompanyViewController.swift in Sources */,
+				14F66C8629C5410100B7CC75 /* CategoryDetailProtocol.swift in Sources */,
+				14F66C8429C53FC100B7CC75 /* CategoryDetailPresenter.swift in Sources */,
 				14F66C4829C0BF0500B7CC75 /* CompanyTableViewDelegate.swift in Sources */,
-				14F66C7829C52E7C00B7CC75 /* JobModel.swift in Sources */,
 				14F66C6B29C4C8BB00B7CC75 /* CategoryTableViewDelegate.swift in Sources */,
 				14F66C1129C0B35E00B7CC75 /* SceneDelegate.swift in Sources */,
 				14F66C5F29C10C0100B7CC75 /* CompanyViewPresenter.swift in Sources */,

@@ -56,7 +56,7 @@ class CompanyTableViewCell: UITableViewCell {
     }
     
     private func countryCompanyCell(){
-        countryOfCompany.font = .systemFont(ofSize: 20)
+        countryOfCompany.font = .systemFont(ofSize: 18)
         countryOfCompany.textColor = .black
         countryOfCompany.translatesAutoresizingMaskIntoConstraints = false
         addSubview(countryOfCompany)

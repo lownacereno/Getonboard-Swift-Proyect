@@ -5,8 +5,8 @@ class CompanyTableViewDataSource : NSObject{
 }
 
 extension CompanyTableViewDataSource: UITableViewDataSource{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return viewController?.company?.data.count ?? 0
     }
     

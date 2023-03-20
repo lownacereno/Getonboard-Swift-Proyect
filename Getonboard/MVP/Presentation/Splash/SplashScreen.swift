@@ -12,7 +12,7 @@ class SplashScreen: UIViewController{
     }
     
     private func initViews(){
-        iconLogoCell()
+        iconCell()
         splashScreenConstraints()
         splashTimer()
     }
@@ -25,7 +25,7 @@ class SplashScreen: UIViewController{
             icon.heightAnchor.constraint(equalToConstant: 50)
         ]) }
     
-    private func iconLogoCell(){
+    private func iconCell(){
         icon.contentMode = .scaleAspectFill
         icon.translatesAutoresizingMaskIntoConstraints = false
         icon.image = UIImage(named: "icon")
