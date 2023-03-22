@@ -2,7 +2,7 @@ import UIKit
 
 class CategoryDetailViewController: UIViewController{
     
-    private let workOffersTableView = UITableView()
+    private let jobListTableView = UITableView()
     var categoryID: String = ""
     private let dataSource : CategoryDetailDataSource?
     private let delegate : CategoryDetailDelegate?
@@ -37,19 +37,19 @@ class CategoryDetailViewController: UIViewController{
     
     private func layout(){
         NSLayoutConstraint.activate([
-            workOffersTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            workOffersTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            workOffersTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            workOffersTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            jobListTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            jobListTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            jobListTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            jobListTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
     }
     
     private func initTableView() {
-        workOffersTableView.translatesAutoresizingMaskIntoConstraints = false
-        workOffersTableView.dataSource = dataSource
-        workOffersTableView.delegate = delegate
-        workOffersTableView.register(CategoryDetailTableViewCell.self, forCellReuseIdentifier: "CategoryDetailTableViewCell" )
-        view.addSubview(workOffersTableView)
+        jobListTableView.translatesAutoresizingMaskIntoConstraints = false
+        jobListTableView.dataSource = dataSource
+        jobListTableView.delegate = delegate
+        jobListTableView.register(CategoryDetailTableViewCell.self, forCellReuseIdentifier: "CategoryDetailTableViewCell" )
+        view.addSubview(jobListTableView)
     }
 }
 
@@ -58,7 +58,7 @@ extension CategoryDetailViewController: CategoryDetailProtocol{
     func presentCategoryDetail(categoryDetail: CategoryDetailModel) {
         self.workOffers = categoryDetail
         DispatchQueue.main.async {
-            self.workOffersTableView.reloadData()
+            self.jobListTableView.reloadData()
         }
     }
     
@@ -68,5 +68,6 @@ extension CategoryDetailViewController: CategoryDetailProtocol{
         categoryDetail.jobRequirements = model
         present(categoryDetail, animated: true)
     }
+    
 }
 

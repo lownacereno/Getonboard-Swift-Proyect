@@ -4,7 +4,7 @@ class CategoryViewController: UIViewController{
     
     var categories : CategoryModel?
     
-    private let categoryTableView = UITableView()
+    let categoryTableView = UITableView()
     private let dataSource : CategoryTableViewDataSource?
     private let delegate : CategoryTableViewDelegate?
     private let presenter = CategoryViewPresenter()

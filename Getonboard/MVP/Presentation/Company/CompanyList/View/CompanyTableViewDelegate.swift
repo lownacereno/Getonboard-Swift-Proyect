@@ -1,8 +1,7 @@
 import UIKit
 
 class CompanyTableViewDelegate : NSObject{
-    var viewController: CompanyViewController?
-    
+    var viewController: CompanyPresenterProtocol?
 }
 
 extension CompanyTableViewDelegate: UITableViewDelegate{

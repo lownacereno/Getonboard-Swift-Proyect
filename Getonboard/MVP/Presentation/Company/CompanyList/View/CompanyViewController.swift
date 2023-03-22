@@ -3,7 +3,7 @@ import UIKit
 class CompanyViewController: UIViewController{
     
     var company : CompanyModel?
-    private let companyTableView = UITableView()
+    let companyTableView = UITableView()
     private let dataSource : CompanyTableViewDataSource?
     private let delegate : CompanyTableViewDelegate?
     private let presenter = CompanyViewPresenter()

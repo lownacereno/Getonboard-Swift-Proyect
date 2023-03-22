@@ -1,7 +1,7 @@
 import UIKit
 
 class CategoryTableViewDelegate : NSObject{
-    var viewController: CategoryViewController?
+    var viewController: CategoryPresenterProtocol?
 }
 
 extension CategoryTableViewDelegate: UITableViewDelegate{
