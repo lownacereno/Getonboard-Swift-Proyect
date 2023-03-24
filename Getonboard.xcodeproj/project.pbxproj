@@ -123,7 +123,7 @@
 		14F66CAB29CA4BC100B7CC75 /* CategoryTableViewDelegateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewDelegateTest.swift; sourceTree = "<group>"; };
 		14F66CAD29CA4BEB00B7CC75 /* NavigationToCategoriesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationToCategoriesMock.swift; sourceTree = "<group>"; };
 		14F66CB329CA61DD00B7CC75 /* CategoryTableViewDataSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewDataSourceTest.swift; sourceTree = "<group>"; };
-		14F66CB529CA67E900B7CC75 /* CompanyViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CompanyViewControllerTest.swift; path = Company/CompanyViewControllerTest.swift; sourceTree = "<group>"; };
+		14F66CB529CA67E900B7CC75 /* CompanyViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewControllerTest.swift; sourceTree = "<group>"; };
 		14F66D3D29CDF20F00B7CC75 /* CategoryDetailTableViewDelegateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailTableViewDelegateTest.swift; sourceTree = "<group>"; };
 		14F66D3F29CDF25000B7CC75 /* NavigationToJobsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationToJobsMock.swift; sourceTree = "<group>"; };
 		14F66D4129CDF34A00B7CC75 /* CategoryDetailTableViewDataSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailTableViewDataSourceTest.swift; sourceTree = "<group>"; };
@@ -462,6 +462,8 @@
 		14F66C9C29C897D000B7CC75 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				14F66CA729CA443D00B7CC75 /* TabBar */,
+				14F66CAA29CA4BAE00B7CC75 /* Category */,
 				14F66C9D29C897EA00B7CC75 /* Company */,
 			);
 			path = Presentation;
@@ -486,12 +488,7 @@
 		14F66C9F29C8982300B7CC75 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				14F66CAA29CA4BAE00B7CC75 /* Category */,
-				14F66CA729CA443D00B7CC75 /* TabBar */,
 				14F66CA629CA443700B7CC75 /* Company */,
-				14F66CA029C8984100B7CC75 /* CompanyTableViewDelegateTest.swift */,
-				14F66CA229C8986000B7CC75 /* NavigationDetailMock.swift */,
-				14F66CB529CA67E900B7CC75 /* CompanyViewControllerTest.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -499,6 +496,9 @@
 		14F66CA629CA443700B7CC75 /* Company */ = {
 			isa = PBXGroup;
 			children = (
+				14F66CA029C8984100B7CC75 /* CompanyTableViewDelegateTest.swift */,
+				14F66CA229C8986000B7CC75 /* NavigationDetailMock.swift */,
+				14F66CB529CA67E900B7CC75 /* CompanyViewControllerTest.swift */,
 			);
 			path = Company;
 			sourceTree = "<group>";

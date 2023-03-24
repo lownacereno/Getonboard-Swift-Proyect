@@ -1,7 +1,7 @@
 import XCTest
 @testable import Getonboard
 
-class CompanyViewControllerTest: XCTestCase {
+class CompanyTableViewDataSourceTest: XCTestCase {
     var sut: CompanyTableViewDataSource!
     var viewController : CompanyViewController!
     
