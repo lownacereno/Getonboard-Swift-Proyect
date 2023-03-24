@@ -1,10 +1,10 @@
 import UIKit
 
-class CategoryDetailDataSource : NSObject{
+class CategoryDetailTableViewDataSource : NSObject{
     weak var viewController: CategoryDetailViewController?
 }
 
-extension CategoryDetailDataSource: UITableViewDataSource{
+extension CategoryDetailTableViewDataSource: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let model = viewController?.workOffers?.data.count else {return 0}

@@ -1,10 +1,10 @@
 import UIKit
 
-class CategoryDetailDelegate : NSObject{
+class CategoryDetailTableViewDelegate : NSObject{
     var viewController: CategoryDetailPresenterProtocol?
 }
 
-extension CategoryDetailDelegate: UITableViewDelegate{
+extension CategoryDetailTableViewDelegate: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)

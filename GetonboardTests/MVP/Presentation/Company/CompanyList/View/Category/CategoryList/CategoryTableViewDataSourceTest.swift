@@ -1,25 +1,41 @@
 import XCTest
 @testable import Getonboard
 
-class CategoryViewControllerTest: XCTestCase {
-    var sut: CategoryViewController!
-
+class CategoryTableViewDataSourceTest: XCTestCase {
+    var sut: CategoryTableViewDataSource!
+    var viewController : CategoryViewController!
+    
     override func setUp() {
         super.setUp()
-        sut = CategoryViewController(dataSourceTable: CategoryTableViewDataSource(), delegateTable: CategoryTableViewDelegate())
+        sut = CategoryTableViewDataSource()
+        viewController = CategoryViewController(dataSourceTable: sut, delegateTable: CategoryTableViewDelegate())
     }
-
+    
     override func tearDown() {
         sut = nil
+        viewController = nil
         super.tearDown()
     }
-
-    func testNumberOfRowsInSection() {
-        let section = 0 // la sección que quieres probar
-        guard let expectedRows = sut.categories?.data.count else {return}// el número de filas que esperas
-
-        guard let actualRows = sut.categoryTableView.dataSource?.tableView(sut.categoryTableView, numberOfRowsInSection: section) else {return}
-
-        XCTAssertEqual(actualRows, expectedRows)
+    
+    func testNumberOfRowsInSectionZero(){
+        sut.viewController = nil
+        XCTAssertEqual(sut.tableView(viewController.categoryTableView, numberOfRowsInSection: 0), 0)
+    }
+    
+    func testNumberOfRowsInSection(){
+        viewController.categories = CategoryModel(data: [DatumCategory(id: "1", attributes: Attributes(name: "Pedro", dimension: "casa"))])
+        XCTAssertEqual(sut.tableView(viewController.categoryTableView, numberOfRowsInSection: 0), 1)
+    }
+    
+    func testcellForRowAt(){
+        viewController.categories = CategoryModel(data: [DatumCategory(id: "1", attributes: Attributes(name: "Pedro", dimension: "casa"))])
+        viewController.categoryTableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: "CategoryTableViewCell")
+        XCTAssertNotNil(sut.tableView(viewController.categoryTableView, cellForRowAt: IndexPath(row: 0, section: 0)))
+    }
+    
+    func testcellForRowAtReturnZero(){
+        sut.viewController = nil
+        viewController.categoryTableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: "CategoryTableViewCell")
+        XCTAssertNotNil(sut.tableView(viewController.categoryTableView, cellForRowAt: IndexPath(row: 0, section: 0)))
     }
 }

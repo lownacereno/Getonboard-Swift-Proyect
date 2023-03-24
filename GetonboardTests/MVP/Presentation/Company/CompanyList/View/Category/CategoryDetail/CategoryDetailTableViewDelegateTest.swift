@@ -1,15 +1,15 @@
 import XCTest
 @testable import Getonboard
 
-class CompanyTableViewDelegateTest: XCTestCase{
+class CategoryDetailTableViewDelegateTest: XCTestCase{
     
-    var sut : CompanyTableViewDelegate!
-    var mock : NavigationDetailMock!
+    var sut : CategoryDetailTableViewDelegate!
+    var mock : NavigationToJobsMock!
     
     override func setUp() {
         super.setUp()
-        sut = CompanyTableViewDelegate()
-        mock = NavigationDetailMock()
+        sut = CategoryDetailTableViewDelegate()
+        mock = NavigationToJobsMock()
         sut.viewController = mock
     }
     
@@ -23,6 +23,5 @@ class CompanyTableViewDelegateTest: XCTestCase{
         sut.tableView(UITableView(), didSelectRowAt: IndexPath(row: 0, section: 0))
         XCTAssertTrue(mock.success)
     }
-    
     
 }

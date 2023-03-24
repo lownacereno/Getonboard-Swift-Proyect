@@ -2,14 +2,14 @@ import UIKit
 
 class CategoryDetailViewController: UIViewController{
     
-    private let jobListTableView = UITableView()
+    let jobListTableView = UITableView()
     var categoryID: String = ""
-    private let dataSource : CategoryDetailDataSource?
-    private let delegate : CategoryDetailDelegate?
+    private let dataSource : CategoryDetailTableViewDataSource?
+    private let delegate : CategoryDetailTableViewDelegate?
     var workOffers : CategoryDetailModel?
     let presenter = CategoryDetailPresenter()
     
-    init(dataSourceTable: CategoryDetailDataSource, delegateTable: CategoryDetailDelegate){
+    init(dataSourceTable: CategoryDetailTableViewDataSource, delegateTable: CategoryDetailTableViewDelegate){
         self.dataSource = dataSourceTable
         self.delegate = delegateTable
         super.init(nibName: nil, bundle: nil)
