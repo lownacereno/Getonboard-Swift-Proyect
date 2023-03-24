@@ -37,7 +37,7 @@
 		14F66C7D29C5317700B7CC75 /* CategoryDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C7C29C5317700B7CC75 /* CategoryDetailModel.swift */; };
 		14F66C8029C53F4C00B7CC75 /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C7F29C53F4C00B7CC75 /* CategoryDetailViewController.swift */; };
 		14F66C8429C53FC100B7CC75 /* CategoryDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C8329C53FC100B7CC75 /* CategoryDetailPresenter.swift */; };
-		14F66C8629C5410100B7CC75 /* CategoryDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C8529C5410100B7CC75 /* CategoryDetailProtocol.swift */; };
+		14F66C8629C5410100B7CC75 /* CategoryDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C8529C5410100B7CC75 /* CategoryDetailPresenterProtocol.swift */; };
 		14F66C8829C6054F00B7CC75 /* CompanyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C8729C6054F00B7CC75 /* CompanyDetailViewController.swift */; };
 		14F66C8E29C75A4B00B7CC75 /* CategoryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C8D29C75A4B00B7CC75 /* CategoryDetailTableViewCell.swift */; };
 		14F66C9129C7FA5100B7CC75 /* JobRequirementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C9029C7FA5100B7CC75 /* JobRequirementsViewController.swift */; };
@@ -108,7 +108,7 @@
 		14F66C7C29C5317700B7CC75 /* CategoryDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailModel.swift; sourceTree = "<group>"; };
 		14F66C7F29C53F4C00B7CC75 /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewController.swift; sourceTree = "<group>"; };
 		14F66C8329C53FC100B7CC75 /* CategoryDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailPresenter.swift; sourceTree = "<group>"; };
-		14F66C8529C5410100B7CC75 /* CategoryDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailProtocol.swift; sourceTree = "<group>"; };
+		14F66C8529C5410100B7CC75 /* CategoryDetailPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailPresenterProtocol.swift; sourceTree = "<group>"; };
 		14F66C8729C6054F00B7CC75 /* CompanyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailViewController.swift; sourceTree = "<group>"; };
 		14F66C8D29C75A4B00B7CC75 /* CategoryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailTableViewCell.swift; sourceTree = "<group>"; };
 		14F66C9029C7FA5100B7CC75 /* JobRequirementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobRequirementsViewController.swift; sourceTree = "<group>"; };
@@ -387,7 +387,7 @@
 		14F66C8229C53FA100B7CC75 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				14F66C8529C5410100B7CC75 /* CategoryDetailProtocol.swift */,
+				14F66C8529C5410100B7CC75 /* CategoryDetailPresenterProtocol.swift */,
 				14F66C8329C53FC100B7CC75 /* CategoryDetailPresenter.swift */,
 			);
 			path = Presenter;
@@ -794,7 +794,7 @@
 				14F66C5929C0F20D00B7CC75 /* CompanyModel.swift in Sources */,
 				14F66C4629C0BB2C00B7CC75 /* CompanyViewController.swift in Sources */,
 				14F66C9329C7FB0200B7CC75 /* CategoryDetailDataSource.swift in Sources */,
-				14F66C8629C5410100B7CC75 /* CategoryDetailProtocol.swift in Sources */,
+				14F66C8629C5410100B7CC75 /* CategoryDetailPresenterProtocol.swift in Sources */,
 				14F66C8429C53FC100B7CC75 /* CategoryDetailPresenter.swift in Sources */,
 				14F66C4829C0BF0500B7CC75 /* CompanyTableViewDelegate.swift in Sources */,
 				14F66C6B29C4C8BB00B7CC75 /* CategoryTableViewDelegate.swift in Sources */,

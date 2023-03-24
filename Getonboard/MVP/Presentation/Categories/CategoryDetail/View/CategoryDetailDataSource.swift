@@ -7,7 +7,8 @@ class CategoryDetailDataSource : NSObject{
 extension CategoryDetailDataSource: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewController?.workOffers?.data.count ?? 0
+        guard let model = viewController?.workOffers?.data.count else {return 0}
+        return model
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

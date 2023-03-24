@@ -12,8 +12,5 @@ struct DatumCategory: Codable {
 struct Attributes: Codable {
     let name: String
     let dimension: String
-//    let title: String
-//    let description: String
-//    let logo: String
 }
 

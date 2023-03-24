@@ -7,7 +7,8 @@ class CompanyTableViewDataSource : NSObject{
 extension CompanyTableViewDataSource: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewController?.company?.data.count ?? 0
+        guard let model = viewController?.company?.data.count else {return 0}
+        return model
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

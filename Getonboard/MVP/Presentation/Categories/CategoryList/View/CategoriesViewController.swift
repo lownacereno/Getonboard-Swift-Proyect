@@ -55,7 +55,6 @@ class CategoryViewController: UIViewController{
             categoryTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
-    
 }
 
 extension CategoryViewController: CategoryPresenterProtocol{
@@ -73,8 +72,6 @@ extension CategoryViewController: CategoryPresenterProtocol{
         categoryDetail.categoryID = model
         navigationController?.pushViewController(categoryDetail, animated: true)
     }
-
-    
 }
 
 

@@ -5,16 +5,15 @@ struct CategoryDetailModel: Codable {
 }
 
 struct Datum: Codable {
-    let id, type: String
+    let id: String
     let attributes: DatumAttributes
 }
 
 struct DatumAttributes: Codable {
-    let title, descriptionHeadline, description, projects: String
+    let title, description: String
    
     enum CodingKeys: String, CodingKey {
         case title
-        case descriptionHeadline = "description_headline"
-        case description, projects
+        case description
     }
 }

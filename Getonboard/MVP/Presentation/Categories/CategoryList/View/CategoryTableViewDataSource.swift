@@ -6,8 +6,8 @@ class CategoryTableViewDataSource : NSObject{
 
 extension CategoryTableViewDataSource: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return viewController?.categories?.data.count ?? 0
+        guard let model = viewController?.categories?.data.count else {return 0}
+        return model
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -1,7 +1,6 @@
 import UIKit
 
-protocol CategoryDetailProtocol: AnyObject{
+protocol CategoryDetailPresenterProtocol: AnyObject{
     func presentCategoryDetail(categoryDetail: CategoryDetailModel)
     func goToDetail(indexPath: IndexPath)
-    
 }

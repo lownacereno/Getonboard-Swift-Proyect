@@ -5,7 +5,7 @@ class CompanyViewPresenter{
     weak var delegate : CompanyPresenterProtocol?
     
     public func getCompanies(){
-        guard let url = URL(string: "https://www.getonbrd.com/api/v0/companies?per_page=10&page=1") else { return }
+        guard let url = URL(string: "https://www.getonbrd.com/api/v0/companies?per_page=20&page=1") else { return }
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
             guard let data = data, error == nil else {
                 return

@@ -53,7 +53,7 @@ class CategoryDetailViewController: UIViewController{
     }
 }
 
-extension CategoryDetailViewController: CategoryDetailProtocol{
+extension CategoryDetailViewController: CategoryDetailPresenterProtocol{
     
     func presentCategoryDetail(categoryDetail: CategoryDetailModel) {
         self.workOffers = categoryDetail
