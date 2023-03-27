@@ -23,12 +23,12 @@ class CategoryDetailTableViewDataSourceTest: XCTestCase {
     }
     
     func testNumberOfRowsInSection(){
-        viewController.workOffers = CategoryDetailModel(data: [Datum(id: "1", attributes: DatumAttributes(title: "Hola", description: "mundo"))])
+        viewController.workOffers = CategoryDetailModel(data: [Data(id: "1", attributes: DatumAttributes(title: "Hola", description: "mundo"))])
         XCTAssertEqual(sut.tableView(viewController.jobListTableView, numberOfRowsInSection: 0), 1)
     }
     
     func testcellForRowAt(){
-        viewController.workOffers = CategoryDetailModel(data: [Datum(id: "1", attributes: DatumAttributes(title: "Hola", description: "mundo"))])
+        viewController.workOffers = CategoryDetailModel(data: [Data(id: "1", attributes: DatumAttributes(title: "Hola", description: "mundo"))])
         viewController.jobListTableView.register(CategoryDetailTableViewCell.self, forCellReuseIdentifier: "CategoryDetailTableViewCell")
         XCTAssertNotNil(sut.tableView(viewController.jobListTableView, cellForRowAt: IndexPath(row: 0, section: 0)))
     }

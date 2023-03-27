@@ -1,10 +1,10 @@
 import Foundation
 
 struct CategoryDetailModel: Codable {
-    let data: [Datum]
+    let data: [Data]
 }
 
-struct Datum: Codable {
+struct Data: Codable {
     let id: String
     let attributes: DatumAttributes
 }
@@ -12,8 +12,4 @@ struct Datum: Codable {
 struct DatumAttributes: Codable {
     let title, description: String
    
-    enum CodingKeys: String, CodingKey {
-        case title
-        case description
-    }
 }

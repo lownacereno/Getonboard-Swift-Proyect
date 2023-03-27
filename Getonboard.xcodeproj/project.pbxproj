@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		14F66C0F29C0B35E00B7CC75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C0E29C0B35E00B7CC75 /* AppDelegate.swift */; };
 		14F66C1129C0B35E00B7CC75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C1029C0B35E00B7CC75 /* SceneDelegate.swift */; };
-		14F66C1329C0B35E00B7CC75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C1229C0B35E00B7CC75 /* ViewController.swift */; };
-		14F66C1629C0B35E00B7CC75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F66C1429C0B35E00B7CC75 /* Main.storyboard */; };
 		14F66C1829C0B36000B7CC75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F66C1729C0B36000B7CC75 /* Assets.xcassets */; };
 		14F66C1B29C0B36000B7CC75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F66C1929C0B36000B7CC75 /* LaunchScreen.storyboard */; };
 		14F66C2629C0B36000B7CC75 /* GetonboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C2529C0B36000B7CC75 /* GetonboardTests.swift */; };
@@ -25,7 +23,7 @@
 		14F66C5929C0F20D00B7CC75 /* CompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C5829C0F20D00B7CC75 /* CompanyModel.swift */; };
 		14F66C5B29C0F28D00B7CC75 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C5A29C0F28D00B7CC75 /* CompanyTableViewCell.swift */; };
 		14F66C5F29C10C0100B7CC75 /* CompanyViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C5E29C10C0100B7CC75 /* CompanyViewPresenter.swift */; };
-		14F66C6229C1241200B7CC75 /* DatumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6129C1241200B7CC75 /* DatumModel.swift */; };
+		14F66C6229C1241200B7CC75 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6129C1241200B7CC75 /* DataModel.swift */; };
 		14F66C6529C1246F00B7CC75 /* AttributesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6429C1246F00B7CC75 /* AttributesModel.swift */; };
 		14F66C6729C20D1A00B7CC75 /* CompanyPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6629C20D1A00B7CC75 /* CompanyPresenterProtocol.swift */; };
 		14F66C6929C4C8AA00B7CC75 /* CategoryTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C6829C4C8AA00B7CC75 /* CategoryTableViewDataSource.swift */; };
@@ -80,8 +78,6 @@
 		14F66C0B29C0B35E00B7CC75 /* Getonboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getonboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F66C0E29C0B35E00B7CC75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14F66C1029C0B35E00B7CC75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14F66C1229C0B35E00B7CC75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		14F66C1529C0B35E00B7CC75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14F66C1729C0B36000B7CC75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14F66C1A29C0B36000B7CC75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14F66C1C29C0B36000B7CC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,7 +95,7 @@
 		14F66C5829C0F20D00B7CC75 /* CompanyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyModel.swift; sourceTree = "<group>"; };
 		14F66C5A29C0F28D00B7CC75 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
 		14F66C5E29C10C0100B7CC75 /* CompanyViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewPresenter.swift; sourceTree = "<group>"; };
-		14F66C6129C1241200B7CC75 /* DatumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatumModel.swift; sourceTree = "<group>"; };
+		14F66C6129C1241200B7CC75 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		14F66C6429C1246F00B7CC75 /* AttributesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesModel.swift; sourceTree = "<group>"; };
 		14F66C6629C20D1A00B7CC75 /* CompanyPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPresenterProtocol.swift; sourceTree = "<group>"; };
 		14F66C6829C4C8AA00B7CC75 /* CategoryTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewDataSource.swift; sourceTree = "<group>"; };
@@ -206,8 +202,6 @@
 				14F66C4229C0BB0400B7CC75 /* MVP */,
 				14F66C0E29C0B35E00B7CC75 /* AppDelegate.swift */,
 				14F66C1029C0B35E00B7CC75 /* SceneDelegate.swift */,
-				14F66C1229C0B35E00B7CC75 /* ViewController.swift */,
-				14F66C1429C0B35E00B7CC75 /* Main.storyboard */,
 				14F66C1729C0B36000B7CC75 /* Assets.xcassets */,
 				14F66C1929C0B36000B7CC75 /* LaunchScreen.storyboard */,
 				14F66C1C29C0B36000B7CC75 /* Info.plist */,
@@ -339,7 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				14F66C5829C0F20D00B7CC75 /* CompanyModel.swift */,
-				14F66C6129C1241200B7CC75 /* DatumModel.swift */,
+				14F66C6129C1241200B7CC75 /* DataModel.swift */,
 				14F66C6429C1246F00B7CC75 /* AttributesModel.swift */,
 			);
 			path = CompanyModel;
@@ -661,7 +655,6 @@
 			files = (
 				14F66C1B29C0B36000B7CC75 /* LaunchScreen.storyboard in Resources */,
 				14F66C1829C0B36000B7CC75 /* Assets.xcassets in Resources */,
-				14F66C1629C0B35E00B7CC75 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -790,14 +783,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F66C3F29C0B38B00B7CC75 /* SplashScreen.swift in Sources */,
-				14F66C1329C0B35E00B7CC75 /* ViewController.swift in Sources */,
 				14F66C6529C1246F00B7CC75 /* AttributesModel.swift in Sources */,
 				14F66C6F29C4CA3F00B7CC75 /* CategoryViewPresenter.swift in Sources */,
 				14F66C7429C4CD0B00B7CC75 /* CategoryModel.swift in Sources */,
 				14F66C4A29C0BF1400B7CC75 /* CompanyTableViewDataSource.swift in Sources */,
 				14F66C7129C4CA6200B7CC75 /* CategoryPresenterProtocol.swift in Sources */,
 				14F66C4429C0BB1900B7CC75 /* CategoriesViewController.swift in Sources */,
-				14F66C6229C1241200B7CC75 /* DatumModel.swift in Sources */,
+				14F66C6229C1241200B7CC75 /* DataModel.swift in Sources */,
 				14F66C8829C6054F00B7CC75 /* CompanyDetailViewController.swift in Sources */,
 				14F66C8029C53F4C00B7CC75 /* CategoryDetailViewController.swift in Sources */,
 				14F66C5B29C0F28D00B7CC75 /* CompanyTableViewCell.swift in Sources */,
@@ -865,14 +857,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		14F66C1429C0B35E00B7CC75 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14F66C1529C0B35E00B7CC75 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		14F66C1929C0B36000B7CC75 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1011,7 +995,6 @@
 				INFOPLIST_FILE = Getonboard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1040,7 +1023,6 @@
 				INFOPLIST_FILE = Getonboard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

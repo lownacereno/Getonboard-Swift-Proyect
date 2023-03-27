@@ -1,5 +1,5 @@
 import Foundation
 
-struct DatumModel: Codable {
+struct DataModel: Codable {
     let attributes: AttributesModel
 }

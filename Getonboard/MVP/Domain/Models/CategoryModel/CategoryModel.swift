@@ -1,10 +1,10 @@
 import Foundation
 
 struct CategoryModel: Codable {
-    let data: [DatumCategory]
+    let data: [DataCategory]
 }
 
-struct DatumCategory: Codable {
+struct DataCategory: Codable {
     let id: String
     let attributes: Attributes
 }
