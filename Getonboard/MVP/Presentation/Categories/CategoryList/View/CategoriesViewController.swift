@@ -3,7 +3,6 @@ import UIKit
 class CategoryViewController: UIViewController{
     
     var categories : CategoryModel?
-    
     let categoryTableView = UITableView()
     private let dataSource : CategoryTableViewDataSource?
     private let delegate : CategoryTableViewDelegate?

@@ -239,10 +239,10 @@
 		14F66C4B29C0EADF00B7CC75 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				14F66C4C29C0EAFB00B7CC75 /* Splash */,
+				14F66C4D29C0EB0900B7CC75 /* TabBar */,
 				14F66C5129C0EB6B00B7CC75 /* Categories */,
 				14F66C4E29C0EB1400B7CC75 /* Company */,
-				14F66C4D29C0EB0900B7CC75 /* TabBar */,
-				14F66C4C29C0EAFB00B7CC75 /* Splash */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -284,9 +284,9 @@
 		14F66C5129C0EB6B00B7CC75 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				14F66C7929C5308D00B7CC75 /* CategoryList */,
 				14F66C8F29C7F9A000B7CC75 /* JobOffers */,
 				14F66C7A29C530AB00B7CC75 /* CategoryDetail */,
-				14F66C7929C5308D00B7CC75 /* CategoryList */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
