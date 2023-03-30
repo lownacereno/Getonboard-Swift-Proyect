@@ -4,12 +4,17 @@ import Foundation
 import UIKit
 
 class NavigationDetailMock: CompanyPresenterProtocol{
+   
     var success = false
     
     func goToDetail(indexPath: IndexPath){
         success = true
     }
     
-    func presentCompanies(companies: Getonboard.CompanyModel) {
+    func presentCompanies(companies: [Getonboard.DataModel]) {
+    }
+    
+    func errorList() {
+        
     }
 }

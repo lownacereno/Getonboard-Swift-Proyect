@@ -23,12 +23,12 @@ class CompanyTableViewDataSourceTest: XCTestCase {
     }
     
     func testNumberOfRowsInSection(){
-        viewController.company = CompanyModel(data: [DataModel(attributes: AttributesModel(name: "Lowna", description: "hola", country: "CL", logo: "logo"))])
+        viewController.company = [DataModel(attributes: AttributesModel(name: "Lowna", description: "hola", country: "CL", logo: "logo"))]
         XCTAssertEqual(sut.tableView(viewController.companyTableView, numberOfRowsInSection: 0), 1)
     }
     
     func testcellForRowAt(){
-        viewController.company = CompanyModel(data: [DataModel(attributes: AttributesModel(name: "Lowna", description: "hola", country: "CL", logo: "logo"))])
+        viewController.company = [DataModel(attributes: AttributesModel(name: "Lowna", description: "hola", country: "CL", logo: "logo"))]
         viewController.companyTableView.register(CompanyTableViewCell.self, forCellReuseIdentifier: "CompanyTableViewCell")
         XCTAssertNotNil(sut.tableView(viewController.companyTableView, cellForRowAt: IndexPath(row: 0, section: 0)))
     }
