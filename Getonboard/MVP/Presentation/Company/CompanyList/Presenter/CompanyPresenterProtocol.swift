@@ -1,7 +1,8 @@
 import UIKit
 
 protocol CompanyPresenterProtocol: AnyObject{
-    func presentCompanies(companies: CompanyModel)
+    func presentCompanies(companies: [DataModel])
     func goToDetail(indexPath: IndexPath)
+    func errorList()
 }
 

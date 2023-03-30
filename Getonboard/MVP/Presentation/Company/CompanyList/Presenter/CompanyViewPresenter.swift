@@ -3,22 +3,22 @@ import UIKit
 class CompanyViewPresenter{
     
     weak var delegate : CompanyPresenterProtocol?
+    private var companyListUseCase : CompanyUseCase?
     
-    public func getCompanies(){
-        guard let url = URL(string: "https://www.getonbrd.com/api/v0/companies?per_page=20&page=1") else { return }
-        let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
-            guard let data = data, error == nil else {
-                return
+    init(companyList : CompanyUseCase) {
+        self.companyListUseCase = companyList
+    }
+    
+    
+    func getCompanies(){
+        self.companyListUseCase?.getCompanies( completionHandler: { [weak self] result in
+            switch result{
+            case let .success(model):
+                self?.delegate?.presentCompanies(companies: model)
+            case .failure:
+                self?.delegate?.errorList()
             }
-            do{
-                let companies = try JSONDecoder().decode(CompanyModel.self, from: data)
-                self?.delegate?.presentCompanies(companies: companies)
-            }
-            catch{
-                print(error)
-            }
-        }
-        task.resume()
+        })
     }
    
     public func setViewDelegate(delegate: CompanyPresenterProtocol){
