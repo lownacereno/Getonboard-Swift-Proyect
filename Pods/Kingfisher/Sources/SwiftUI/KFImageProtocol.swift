@@ -56,8 +56,8 @@ extension KFImageProtocol {
     /// Creates a Kingfisher compatible image view to load image from the given `URL`.
     /// - Parameters:
     ///   - source: The image `Source` defining where to load the target image.
-    public init(_ url: URL?) {
-        self.init(source: url?.convertToSource())
+    public init(_ invalidURL: URL?) {
+        self.init(source: invalidURL?.convertToSource())
     }
     
     /// Configures current image with a `block`. This block will be lazily applied when creating the final `Image`.

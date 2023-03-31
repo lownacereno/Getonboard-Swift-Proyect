@@ -14,7 +14,7 @@ class NavigationDetailMock: CompanyPresenterProtocol{
     func presentCompanies(companies: [Getonboard.DataModel]) {
     }
     
-    func errorList() {
+    func showError() {
         
     }
 }

@@ -76,7 +76,7 @@ extension CompanyViewController: CompanyPresenterProtocol{
         }
     }
     
-    func errorList() {
+    func showError() {
         let alert = UIAlertController(title: "Error", message: "Parece que hay un error, inténtelo de nuevo", preferredStyle: .alert)
         let ok = UIAlertAction(title: "Ok", style: .destructive)
         alert.addAction(ok)

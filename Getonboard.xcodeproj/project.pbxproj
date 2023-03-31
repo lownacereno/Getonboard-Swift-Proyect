@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		143BDF4429D5D1BC000C0EBB /* CompanyUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BDF4329D5D1BC000C0EBB /* CompanyUseCase.swift */; };
-		143BDF4729D5D44C000C0EBB /* ErrorCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BDF4629D5D44C000C0EBB /* ErrorCustom.swift */; };
+		143BDF4729D5D44C000C0EBB /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BDF4629D5D44C000C0EBB /* NetworkError.swift */; };
 		14F66C0F29C0B35E00B7CC75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C0E29C0B35E00B7CC75 /* AppDelegate.swift */; };
 		14F66C1129C0B35E00B7CC75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C1029C0B35E00B7CC75 /* SceneDelegate.swift */; };
 		14F66C1829C0B36000B7CC75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F66C1729C0B36000B7CC75 /* Assets.xcassets */; };
@@ -78,7 +78,7 @@
 /* Begin PBXFileReference section */
 		0E87CC0DA596D6E91519FE3B /* Pods-Getonboard-GetonboardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getonboard-GetonboardUITests.debug.xcconfig"; path = "Target Support Files/Pods-Getonboard-GetonboardUITests/Pods-Getonboard-GetonboardUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		143BDF4329D5D1BC000C0EBB /* CompanyUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyUseCase.swift; sourceTree = "<group>"; };
-		143BDF4629D5D44C000C0EBB /* ErrorCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCustom.swift; sourceTree = "<group>"; };
+		143BDF4629D5D44C000C0EBB /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		14F66C0B29C0B35E00B7CC75 /* Getonboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getonboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F66C0E29C0B35E00B7CC75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14F66C1029C0B35E00B7CC75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -211,7 +211,7 @@
 		14F66C0D29C0B35E00B7CC75 /* Getonboard */ = {
 			isa = PBXGroup;
 			children = (
-				143BDF4629D5D44C000C0EBB /* ErrorCustom.swift */,
+				143BDF4629D5D44C000C0EBB /* NetworkError.swift */,
 				14F66C4229C0BB0400B7CC75 /* MVP */,
 				14F66C0E29C0B35E00B7CC75 /* AppDelegate.swift */,
 				14F66C1029C0B35E00B7CC75 /* SceneDelegate.swift */,
@@ -825,7 +825,7 @@
 				14F66C1129C0B35E00B7CC75 /* SceneDelegate.swift in Sources */,
 				143BDF4429D5D1BC000C0EBB /* CompanyUseCase.swift in Sources */,
 				14F66C5F29C10C0100B7CC75 /* CompanyViewPresenter.swift in Sources */,
-				143BDF4729D5D44C000C0EBB /* ErrorCustom.swift in Sources */,
+				143BDF4729D5D44C000C0EBB /* NetworkError.swift in Sources */,
 				14F66C6D29C4C93100B7CC75 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
