@@ -3,23 +3,25 @@ import UIKit
 class CategoryDetailPresenter{
     
     weak var delegate : CategoryDetailPresenterProtocol?
+    private let categoryDetailUseCase : CategoryDetailUseCase?
+    
+    init(categoryDetail : CategoryDetailUseCase) {
+        self.categoryDetailUseCase = categoryDetail
+    }
     
     public func getCategoryDetail(id: String){
-        guard let url = URL(string: "https://www.getonbrd.com/api/v0/categories/\(id)/jobs?per_page=100&page=1") else { return }
-        let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
-            guard let data = data, error == nil else {
-                return
+        do {try self.categoryDetailUseCase?.getCategoryDetail(id: id, completionHandler: { [weak self] result in
+            switch result{
+            case let .success(model):
+                self?.delegate?.presentCategoryDetail(categoryDetail: model)
+            case .failure:
+                self?.delegate?.showError()
             }
-            do{
-                let companies = try JSONDecoder().decode(CategoryDetailModel.self, from: data)
-                self?.delegate?.presentCategoryDetail(categoryDetail: companies)
-                print(companies.data.count)
-            }
-            catch{
-                print(error)
-            }
+        })
         }
-        task.resume()
+        catch{
+            print(error)
+        }
     }
     
     public func setViewDelegate(delegate: CategoryDetailPresenterProtocol){

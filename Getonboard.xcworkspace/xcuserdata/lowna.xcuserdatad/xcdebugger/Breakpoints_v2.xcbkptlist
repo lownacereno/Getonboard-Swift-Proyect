@@ -36,5 +36,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FFF5071F-9D15-4BAE-80F5-C7C696850680"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Getonboard/MVP/Presentation/Categories/CategoryDetail/Presenter/CategoryDetailPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "getCategoryDetail(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FFF5071F-9D15-4BAE-80F5-C7C696850680 - d632b09396a8b19e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Getonboard.CategoryDetailPresenter.getCategoryDetail(id: Swift.String) -&gt; ()"
+                  moduleName = "Getonboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lowna/Desktop/Proyectos%20iOS/Getonboard/Getonboard/MVP/Presentation/Categories/CategoryDetail/Presenter/CategoryDetailPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "FFF5071F-9D15-4BAE-80F5-C7C696850680 - 8a165cbb99491d2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Getonboard.Data&gt;, Swift.Error&gt;) -&gt; () in Getonboard.CategoryDetailPresenter.getCategoryDetail(id: Swift.String) -&gt; ()"
+                  moduleName = "Getonboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lowna/Desktop/Proyectos%20iOS/Getonboard/Getonboard/MVP/Presentation/Categories/CategoryDetail/Presenter/CategoryDetailPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

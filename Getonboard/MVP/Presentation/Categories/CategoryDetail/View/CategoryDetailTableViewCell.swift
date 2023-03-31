@@ -2,8 +2,8 @@ import UIKit
 import Kingfisher
 
 class CategoryDetailTableViewCell: UITableViewCell{
-     let jobTitle = UILabel()
-
+    let jobTitle = UILabel()
+    
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -28,7 +28,7 @@ class CategoryDetailTableViewCell: UITableViewCell{
             jobTitle.bottomAnchor.constraint(equalTo: bottomAnchor,constant: -12)
         ])
     }
-   
+    
     private func jobTitleCell(){
         jobTitle.translatesAutoresizingMaskIntoConstraints = false
         jobTitle.font = .boldSystemFont(ofSize: 20)

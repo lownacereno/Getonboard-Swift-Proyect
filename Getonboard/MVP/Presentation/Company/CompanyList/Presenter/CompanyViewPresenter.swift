@@ -2,8 +2,8 @@ import UIKit
 
 class CompanyViewPresenter{
     
-    weak var delegate : CompanyPresenterProtocol?
-    private var companyListUseCase : CompanyUseCase?
+    private var delegate : CompanyPresenterProtocol?
+    private let companyListUseCase : CompanyUseCase?
     
     init(companyList : CompanyUseCase) {
         self.companyListUseCase = companyList

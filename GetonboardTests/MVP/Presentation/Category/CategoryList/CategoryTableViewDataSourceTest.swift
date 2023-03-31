@@ -23,12 +23,12 @@ class CategoryTableViewDataSourceTest: XCTestCase {
     }
     
     func testNumberOfRowsInSection(){
-        viewController.categories = CategoryModel(data: [DataCategory(id: "1", attributes: Attributes(name: "Pedro", dimension: "casa"))])
+        viewController.categories = [DataCategory(id: "1", attributes: Attributes(name: "Pedro", dimension: "casa"))]
         XCTAssertEqual(sut.tableView(viewController.categoryTableView, numberOfRowsInSection: 0), 1)
     }
     
     func testcellForRowAt(){
-        viewController.categories = CategoryModel(data: [DataCategory(id: "1", attributes: Attributes(name: "Pedro", dimension: "casa"))])
+        viewController.categories = [DataCategory(id: "1", attributes: Attributes(name: "Pedro", dimension: "casa"))]
         viewController.categoryTableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: "CategoryTableViewCell")
         XCTAssertNotNil(sut.tableView(viewController.categoryTableView, cellForRowAt: IndexPath(row: 0, section: 0)))
     }

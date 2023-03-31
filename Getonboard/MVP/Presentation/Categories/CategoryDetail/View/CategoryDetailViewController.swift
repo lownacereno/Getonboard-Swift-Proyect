@@ -6,8 +6,8 @@ class CategoryDetailViewController: UIViewController{
     var categoryID: String = ""
     private let dataSource : CategoryDetailTableViewDataSource?
     private let delegate : CategoryDetailTableViewDelegate?
-    var workOffers : CategoryDetailModel?
-    let presenter = CategoryDetailPresenter()
+    var workOffers : [CategoryDetailData]?
+    let presenter = CategoryDetailPresenter(categoryDetail: CategoryDetailUseCase())
     
     init(dataSourceTable: CategoryDetailTableViewDataSource, delegateTable: CategoryDetailTableViewDelegate){
         self.dataSource = dataSourceTable
@@ -55,7 +55,7 @@ class CategoryDetailViewController: UIViewController{
 
 extension CategoryDetailViewController: CategoryDetailPresenterProtocol{
     
-    func presentCategoryDetail(categoryDetail: CategoryDetailModel) {
+    func presentCategoryDetail(categoryDetail: [CategoryDetailData]) {
         self.workOffers = categoryDetail
         DispatchQueue.main.async {
             self.jobListTableView.reloadData()
@@ -63,11 +63,18 @@ extension CategoryDetailViewController: CategoryDetailPresenterProtocol{
     }
     
     func goToDetail(indexPath: IndexPath){
-        guard let model = workOffers?.data[indexPath.row].attributes  else {return}
+        guard let model = workOffers?[indexPath.row].attributes  else {return}
         let categoryDetail = JobRequirementsViewController()
         categoryDetail.jobRequirements = model
         present(categoryDetail, animated: true)
     }
     
+    func showError() {
+        let alert = UIAlertController(title: "Error", message: "Parece que hay un error, inténtelo de nuevo", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "Ok", style: .destructive)
+        alert.addAction(ok)
+        present(alert, animated: true, completion: nil)
+    }
 }
+
 

@@ -4,14 +4,15 @@ import Foundation
 import UIKit
 
 class NavigationToJobsMock: CategoryDetailPresenterProtocol{
-
+    
     var success = false
     
     func goToDetail(indexPath: IndexPath) {
         success = true
     }
     
-    func presentCategoryDetail(categoryDetail: CategoryDetailModel) {
-    }
+    func presentCategoryDetail(categoryDetail: [CategoryDetailData]) {}
+    
+    func showError() {}
 }
 

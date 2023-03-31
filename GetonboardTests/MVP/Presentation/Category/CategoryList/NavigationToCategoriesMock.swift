@@ -12,7 +12,7 @@ class NavigationToCategoriesMock: CategoryPresenterProtocol{
         success = true
     }
     
-    func presentCategories(categories: CategoryModel) {
-        
-    }
+    func presentCategories(categories: [DataCategory]) {}
+    
+    func showError() {}
 }

@@ -81,6 +81,6 @@ extension CompanyViewController: CompanyPresenterProtocol{
         let ok = UIAlertAction(title: "Ok", style: .destructive)
         alert.addAction(ok)
         present(alert, animated: true, completion: nil)
-        }
     }
+}
 

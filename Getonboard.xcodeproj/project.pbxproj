@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		143BDF4429D5D1BC000C0EBB /* CompanyUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BDF4329D5D1BC000C0EBB /* CompanyUseCase.swift */; };
 		143BDF4729D5D44C000C0EBB /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BDF4629D5D44C000C0EBB /* NetworkError.swift */; };
+		143BDF4C29D74E45000C0EBB /* CategoryListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BDF4B29D74E45000C0EBB /* CategoryListUseCase.swift */; };
+		143BDF4E29D750FD000C0EBB /* CategoryDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BDF4D29D750FD000C0EBB /* CategoryDetailUseCase.swift */; };
 		14F66C0F29C0B35E00B7CC75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C0E29C0B35E00B7CC75 /* AppDelegate.swift */; };
 		14F66C1129C0B35E00B7CC75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C1029C0B35E00B7CC75 /* SceneDelegate.swift */; };
 		14F66C1829C0B36000B7CC75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F66C1729C0B36000B7CC75 /* Assets.xcassets */; };
@@ -79,6 +81,8 @@
 		0E87CC0DA596D6E91519FE3B /* Pods-Getonboard-GetonboardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getonboard-GetonboardUITests.debug.xcconfig"; path = "Target Support Files/Pods-Getonboard-GetonboardUITests/Pods-Getonboard-GetonboardUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		143BDF4329D5D1BC000C0EBB /* CompanyUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyUseCase.swift; sourceTree = "<group>"; };
 		143BDF4629D5D44C000C0EBB /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		143BDF4B29D74E45000C0EBB /* CategoryListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListUseCase.swift; sourceTree = "<group>"; };
+		143BDF4D29D750FD000C0EBB /* CategoryDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailUseCase.swift; sourceTree = "<group>"; };
 		14F66C0B29C0B35E00B7CC75 /* Getonboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getonboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F66C0E29C0B35E00B7CC75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14F66C1029C0B35E00B7CC75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				143BDF4329D5D1BC000C0EBB /* CompanyUseCase.swift */,
+				143BDF4B29D74E45000C0EBB /* CategoryListUseCase.swift */,
+				143BDF4D29D750FD000C0EBB /* CategoryDetailUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -800,6 +806,7 @@
 				14F66C6529C1246F00B7CC75 /* AttributesModel.swift in Sources */,
 				14F66C6F29C4CA3F00B7CC75 /* CategoryViewPresenter.swift in Sources */,
 				14F66C7429C4CD0B00B7CC75 /* CategoryModel.swift in Sources */,
+				143BDF4E29D750FD000C0EBB /* CategoryDetailUseCase.swift in Sources */,
 				14F66C4A29C0BF1400B7CC75 /* CompanyTableViewDataSource.swift in Sources */,
 				14F66C7129C4CA6200B7CC75 /* CategoryPresenterProtocol.swift in Sources */,
 				14F66C4429C0BB1900B7CC75 /* CategoriesViewController.swift in Sources */,
@@ -819,6 +826,7 @@
 				14F66C9329C7FB0200B7CC75 /* CategoryDetailTableViewDataSource.swift in Sources */,
 				14F66C8629C5410100B7CC75 /* CategoryDetailPresenterProtocol.swift in Sources */,
 				14F66C8429C53FC100B7CC75 /* CategoryDetailPresenter.swift in Sources */,
+				143BDF4C29D74E45000C0EBB /* CategoryListUseCase.swift in Sources */,
 				14F66C4829C0BF0500B7CC75 /* CompanyTableViewDelegate.swift in Sources */,
 				14F66C6B29C4C8BB00B7CC75 /* CategoryTableViewDelegate.swift in Sources */,
 				14F66C9129C7FA5100B7CC75 /* JobRequirementsViewController.swift in Sources */,

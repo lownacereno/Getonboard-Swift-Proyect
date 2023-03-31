@@ -1,18 +1,18 @@
 import UIKit
 
-final class CompanyUseCase {
+final class CategoryDetailUseCase {
     
-    func getCompanies(completionHandler: @escaping (Result<[DataModel],Error>) -> Void) throws{
+    func getCategoryDetail(id: String, completionHandler: @escaping (Result<[CategoryDetailData],Error>) -> Void) throws{
         
-        guard let url = URL(string: "https://www.getonbrd.com/api/v0/companies?per_page=20&page=1") else {
+        guard let url = URL(string: "https://www.getonbrd.com/api/v0/categories/\(id)/jobs?per_page=100&page=1") else {
             throw NetworkError.invalidURL
         }
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data {
                 do {
-                    let companies = try JSONDecoder().decode(CompanyModel.self, from: data)
-                    completionHandler(.success(companies.data))
+                    let categoriesDetail = try JSONDecoder().decode(CategoryDetailModel.self, from: data)
+                    completionHandler(.success(categoriesDetail.data))
                 }catch {
                     completionHandler(.failure(NetworkError.jsonDecoder))
                 }

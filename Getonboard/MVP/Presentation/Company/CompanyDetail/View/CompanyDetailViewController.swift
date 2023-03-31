@@ -6,7 +6,7 @@ class CompanyDetailViewController: UIViewController{
     private let nameOfCompany = UILabel()
     private let companyDescription = UILabel()
     private let titleDescription = UILabel()
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white

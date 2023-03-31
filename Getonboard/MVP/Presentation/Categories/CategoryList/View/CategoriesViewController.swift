@@ -2,11 +2,11 @@ import UIKit
 
 class CategoryViewController: UIViewController{
     
-    var categories : CategoryModel?
+    var categories : [DataCategory]?
     let categoryTableView = UITableView()
     private let dataSource : CategoryTableViewDataSource?
     private let delegate : CategoryTableViewDelegate?
-    private let presenter = CategoryViewPresenter()
+    private let presenter = CategoryViewPresenter(categoryList: CategoryListUseCase())
     
     init(dataSourceTable: CategoryTableViewDataSource, delegateTable: CategoryTableViewDelegate){
         self.dataSource = dataSourceTable
@@ -58,7 +58,7 @@ class CategoryViewController: UIViewController{
 
 extension CategoryViewController: CategoryPresenterProtocol{
     
-    func presentCategories(categories: CategoryModel) {
+    func presentCategories(categories: [DataCategory]) {
         self.categories = categories
         DispatchQueue.main.async {
             self.categoryTableView.reloadData()
@@ -66,12 +66,20 @@ extension CategoryViewController: CategoryPresenterProtocol{
     }
     
     func goToDetail(indexPath: IndexPath){
-        guard let model = categories?.data[indexPath.row].id else {return}
+        guard let model = categories?[indexPath.row].id else {return}
         let categoryDetail = CategoryDetailViewController(dataSourceTable: CategoryDetailTableViewDataSource(), delegateTable: CategoryDetailTableViewDelegate())
         categoryDetail.categoryID = model
         navigationController?.pushViewController(categoryDetail, animated: true)
     }
+    
+    func showError() {
+        let alert = UIAlertController(title: "Error", message: "Parece que hay un error, inténtelo de nuevo", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "Ok", style: .destructive)
+        alert.addAction(ok)
+        present(alert, animated: true, completion: nil)
+    }
 }
+
 
 
 

@@ -6,7 +6,7 @@ class JobRequirementsViewController: UIViewController{
     private let jobDescription = UILabel()
     private let jobTitle = UILabel()
     private let titleDescription = UILabel()
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -26,12 +26,12 @@ class JobRequirementsViewController: UIViewController{
             titleDescription.topAnchor.constraint(equalTo: view.topAnchor, constant: 30),
             titleDescription.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
             titleDescription.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -12),
-          jobTitle.topAnchor.constraint(equalTo: titleDescription.bottomAnchor, constant: 16),
-          jobTitle.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
-          jobTitle.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -12),
-           jobDescription.topAnchor.constraint(equalTo: jobTitle.bottomAnchor, constant: 30),
-           jobDescription.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-           jobDescription.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
+            jobTitle.topAnchor.constraint(equalTo: titleDescription.bottomAnchor, constant: 16),
+            jobTitle.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
+            jobTitle.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -12),
+            jobDescription.topAnchor.constraint(equalTo: jobTitle.bottomAnchor, constant: 30),
+            jobDescription.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            jobDescription.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
     }
     
@@ -65,6 +65,6 @@ class JobRequirementsViewController: UIViewController{
         guard let jobModel = jobRequirements else {return}
         jobTitle.text.self = jobModel.title
         jobDescription.text.self = jobModel.description.replacingOccurrences(of: "<ul><li>", with: "")
- 
+        
     }
 }
