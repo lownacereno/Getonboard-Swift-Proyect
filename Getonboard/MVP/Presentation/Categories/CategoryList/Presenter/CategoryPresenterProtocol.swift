@@ -5,4 +5,3 @@ protocol CategoryPresenterProtocol: AnyObject{
     func goToDetail(indexPath: IndexPath)
     func showError()
 }
-

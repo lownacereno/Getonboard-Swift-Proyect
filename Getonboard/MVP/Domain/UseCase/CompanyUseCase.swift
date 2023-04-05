@@ -4,7 +4,7 @@ final class CompanyUseCase {
     
     func getCompanies(completionHandler: @escaping (Result<[DataModel],Error>) -> Void) throws{
         
-        guard let url = URL(string: "https://www.getonbrd.com/api/v0/companies?per_page=20&page=1") else {
+        guard let url = URL(string: "\(Endpoints.getCompanies.fullPath)?per_page=20&page=1") else {
             throw NetworkError.invalidURL
         }
         

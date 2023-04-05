@@ -4,7 +4,7 @@ final class CategoryDetailUseCase {
     
     func getCategoryDetail(id: String, completionHandler: @escaping (Result<[CategoryDetailData],Error>) -> Void) throws{
         
-        guard let url = URL(string: "https://www.getonbrd.com/api/v0/categories/\(id)/jobs?per_page=100&page=1") else {
+        guard let url = URL(string: "\(Endpoints.getJobList(id).fullPath)?per_page=100&page=1") else {
             throw NetworkError.invalidURL
         }
         

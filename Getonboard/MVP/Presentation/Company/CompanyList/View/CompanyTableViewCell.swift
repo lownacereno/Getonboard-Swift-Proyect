@@ -3,7 +3,7 @@ import Kingfisher
 
 class CompanyTableViewCell: UITableViewCell {
     
-    private var nameOfCompany = UILabel()
+    private let nameOfCompany = UILabel()
     private let countryOfCompany = UILabel()
     private let logoOfCompany = UIImageView()
     

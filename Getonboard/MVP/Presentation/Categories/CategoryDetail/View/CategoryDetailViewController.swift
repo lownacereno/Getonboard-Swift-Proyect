@@ -76,5 +76,3 @@ extension CategoryDetailViewController: CategoryDetailPresenterProtocol{
         present(alert, animated: true, completion: nil)
     }
 }
-
-

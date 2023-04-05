@@ -12,5 +12,3 @@ extension CategoryTableViewDelegate: UITableViewDelegate{
         vc.goToDetail(indexPath: indexPath)
     }
 }
-
-

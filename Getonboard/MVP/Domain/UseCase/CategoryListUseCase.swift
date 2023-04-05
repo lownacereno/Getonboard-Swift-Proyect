@@ -4,7 +4,7 @@ final class CategoryListUseCase {
     
     func getCategories(completionHandler: @escaping (Result<[DataCategory],Error>) -> Void) throws{
         
-        guard let url = URL(string: "https://www.getonbrd.com/api/v0/categories?per_page=100&page=1") else {
+        guard let url = URL(string: "\(Endpoints.getCategories.fullPath)?per_page=100&page=1") else {
             throw NetworkError.invalidURL
         }
         

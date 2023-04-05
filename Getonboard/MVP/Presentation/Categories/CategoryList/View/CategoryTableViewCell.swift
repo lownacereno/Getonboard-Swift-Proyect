@@ -56,4 +56,3 @@ class CategoryTableViewCell: UITableViewCell {
         self.imageIcon.image = UIImage(systemName: "chevron.right")
     }
 }
-

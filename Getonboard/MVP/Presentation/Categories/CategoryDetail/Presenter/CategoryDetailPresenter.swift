@@ -2,7 +2,7 @@ import UIKit
 
 class CategoryDetailPresenter{
     
-    weak var delegate : CategoryDetailPresenterProtocol?
+    private var delegate : CategoryDetailPresenterProtocol?
     private let categoryDetailUseCase : CategoryDetailUseCase?
     
     init(categoryDetail : CategoryDetailUseCase) {

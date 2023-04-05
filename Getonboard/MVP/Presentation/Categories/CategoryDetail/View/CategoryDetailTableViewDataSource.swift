@@ -16,4 +16,3 @@ extension CategoryDetailTableViewDataSource: UITableViewDataSource{
         cell.setCellValue(model: model)
         return cell
     }}
-
