@@ -1,4 +1,5 @@
 import UIKit
+import Kingfisher
 
 class CompanyDetailViewController: UIViewController{
     
@@ -6,6 +7,7 @@ class CompanyDetailViewController: UIViewController{
     private let nameOfCompany = UILabel()
     private let companyDescription = UILabel()
     private let titleDescription = UILabel()
+    private let companyLogo = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,16 +19,21 @@ class CompanyDetailViewController: UIViewController{
         nameOfCompanySetup()
         titleDescriptionSetup()
         companyDescriptionSetup()
+        companyLogoSetup()
         companyDetailConstraints()
         setCompanyDescription()
     }
     
     private func companyDetailConstraints(){
         NSLayoutConstraint.activate([
-            nameOfCompany.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
-            nameOfCompany.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
-            nameOfCompany.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -12),
-            titleDescription.topAnchor.constraint(equalTo: nameOfCompany.bottomAnchor, constant: 30),
+            companyLogo.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            companyLogo.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
+            companyLogo.widthAnchor.constraint(equalToConstant: 100),
+            companyLogo.heightAnchor.constraint(equalToConstant: 100),
+            nameOfCompany.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            nameOfCompany.leadingAnchor.constraint(equalTo: companyLogo.trailingAnchor, constant: 16),
+            nameOfCompany.centerYAnchor.constraint(equalTo: companyLogo.centerYAnchor),
+            titleDescription.topAnchor.constraint(equalTo: companyLogo.bottomAnchor, constant: 30),
             titleDescription.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
             titleDescription.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -12),
             companyDescription.topAnchor.constraint(equalTo: titleDescription.bottomAnchor, constant: 30),
@@ -38,7 +45,7 @@ class CompanyDetailViewController: UIViewController{
     private func nameOfCompanySetup(){
         nameOfCompany.translatesAutoresizingMaskIntoConstraints = false
         nameOfCompany.font = .boldSystemFont(ofSize: 25)
-        nameOfCompany.textColor = .init(red: 14/255.0, green: 131/255.0, blue: 136/255.0, alpha: 1)
+        nameOfCompany.textColor = AppColors.blueCustomColor
         nameOfCompany.textAlignment = .center
         nameOfCompany.numberOfLines = 0
         view.addSubview(nameOfCompany)
@@ -47,7 +54,7 @@ class CompanyDetailViewController: UIViewController{
     private func titleDescriptionSetup(){
         titleDescription.translatesAutoresizingMaskIntoConstraints = false
         titleDescription.font = .boldSystemFont(ofSize: 25)
-        titleDescription.textColor = .init(red: 14/255.0, green: 131/255.0, blue: 136/255.0, alpha: 1)
+        titleDescription.textColor = AppColors.blueCustomColor
         titleDescription.numberOfLines = 0
         titleDescription.text = "Descripción"
         view.addSubview(titleDescription)
@@ -61,9 +68,19 @@ class CompanyDetailViewController: UIViewController{
         view.addSubview(companyDescription)
     }
     
+    private func companyLogoSetup(){
+        companyLogo.contentMode = .scaleAspectFill
+        companyLogo.translatesAutoresizingMaskIntoConstraints = false
+        companyLogo.layer.cornerRadius = 50
+        companyLogo.clipsToBounds = true
+        view.addSubview(companyLogo)
+        }
+    
     private func setCompanyDescription(){
         guard let company = company else {return}
         nameOfCompany.text.self = company.name
         companyDescription.text.self = company.description
+        guard let url = URL(string: company.logo ) else {return}
+        self.companyLogo.kf.setImage(with: url)
     }
 }

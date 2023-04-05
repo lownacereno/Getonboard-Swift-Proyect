@@ -24,7 +24,7 @@ class CategoryDetailViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        title = "Ofertas de trabajo"
+        self.navigationItem.title = "Ofertas de trabajo"
         presenter.getCategoryDetail(id: categoryID)
         presenter.setViewDelegate(delegate: self)
         initScreen()
@@ -56,7 +56,9 @@ class CategoryDetailViewController: UIViewController{
 extension CategoryDetailViewController: CategoryDetailPresenterProtocol{
     
     func presentCategoryDetail(categoryDetail: [CategoryDetailData]) {
-        self.workOffers = categoryDetail
+        self.workOffers = categoryDetail.sorted(by: { data1, data2 in
+            data1.attributes.publishedAt>data2.attributes.publishedAt
+        })
         DispatchQueue.main.async {
             self.jobListTableView.reloadData()
         }

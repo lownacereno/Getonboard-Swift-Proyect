@@ -28,7 +28,7 @@ class CategoryTableViewCell: UITableViewCell {
             imageIcon.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
             imageIcon.heightAnchor.constraint(equalToConstant: 30),
             imageIcon.widthAnchor.constraint(equalToConstant: 30),
-            nameOfCategory.topAnchor.constraint(equalTo: topAnchor, constant: 30),
+            nameOfCategory.topAnchor.constraint(equalTo: topAnchor, constant: 16),
             nameOfCategory.leadingAnchor.constraint(equalTo: imageIcon.trailingAnchor, constant: 12),
             nameOfCategory.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12),
         ])
@@ -54,5 +54,6 @@ class CategoryTableViewCell: UITableViewCell {
     func setCellCategoryValue(model: Attributes){
         self.nameOfCategory.text = model.name
         self.imageIcon.image = UIImage(systemName: "chevron.right")
+        self.imageIcon.tintColor = AppColors.blueCustomColor
     }
 }

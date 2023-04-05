@@ -4,9 +4,9 @@ class TabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBar.backgroundColor = .systemBackground
+        tabBar.backgroundColor = AppColors.blueCustomColor
         self.navigationItem.setHidesBackButton(true, animated: true)
-        tabBar.tintColor = .label
+        tabBar.tintColor = .red
         setupTabBar()
     }
     

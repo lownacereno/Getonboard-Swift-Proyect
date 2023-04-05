@@ -49,7 +49,7 @@ class CompanyTableViewCell: UITableViewCell {
     
     private func nameCompanyCell(){
         nameOfCompany.font = .boldSystemFont(ofSize: 20)
-        nameOfCompany.textColor = .init(red: 14/255.0, green: 131/255.0, blue: 136/255.0, alpha: 1)
+        nameOfCompany.textColor = AppColors.blueCustomColor
         nameOfCompany.translatesAutoresizingMaskIntoConstraints = false
         nameOfCompany.numberOfLines = 0
         addSubview(nameOfCompany)

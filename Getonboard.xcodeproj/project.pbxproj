@@ -11,7 +11,8 @@
 		143BDF4729D5D44C000C0EBB /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BDF4629D5D44C000C0EBB /* NetworkError.swift */; };
 		143BDF4C29D74E45000C0EBB /* CategoryListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BDF4B29D74E45000C0EBB /* CategoryListUseCase.swift */; };
 		143BDF4E29D750FD000C0EBB /* CategoryDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BDF4D29D750FD000C0EBB /* CategoryDetailUseCase.swift */; };
-		143BDF7729DDCB50000C0EBB /* MyAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BDF7629DDCB50000C0EBB /* MyAppConstants.swift */; };
+		143BDF7729DDCB50000C0EBB /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BDF7629DDCB50000C0EBB /* Endpoints.swift */; };
+		143BDF7A29DE0274000C0EBB /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BDF7929DE0274000C0EBB /* AppColors.swift */; };
 		14F66C0F29C0B35E00B7CC75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C0E29C0B35E00B7CC75 /* AppDelegate.swift */; };
 		14F66C1129C0B35E00B7CC75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F66C1029C0B35E00B7CC75 /* SceneDelegate.swift */; };
 		14F66C1829C0B36000B7CC75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F66C1729C0B36000B7CC75 /* Assets.xcassets */; };
@@ -84,7 +85,8 @@
 		143BDF4629D5D44C000C0EBB /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		143BDF4B29D74E45000C0EBB /* CategoryListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListUseCase.swift; sourceTree = "<group>"; };
 		143BDF4D29D750FD000C0EBB /* CategoryDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailUseCase.swift; sourceTree = "<group>"; };
-		143BDF7629DDCB50000C0EBB /* MyAppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppConstants.swift; sourceTree = "<group>"; };
+		143BDF7629DDCB50000C0EBB /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		143BDF7929DE0274000C0EBB /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		14F66C0B29C0B35E00B7CC75 /* Getonboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getonboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F66C0E29C0B35E00B7CC75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14F66C1029C0B35E00B7CC75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,16 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
+		143BDF7829DDDDA1000C0EBB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				143BDF7629DDCB50000C0EBB /* Endpoints.swift */,
+				143BDF4629D5D44C000C0EBB /* NetworkError.swift */,
+				143BDF7929DE0274000C0EBB /* AppColors.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		14F66C0229C0B35E00B7CC75 = {
 			isa = PBXGroup;
 			children = (
@@ -219,14 +231,13 @@
 		14F66C0D29C0B35E00B7CC75 /* Getonboard */ = {
 			isa = PBXGroup;
 			children = (
-				143BDF4629D5D44C000C0EBB /* NetworkError.swift */,
+				143BDF7829DDDDA1000C0EBB /* Utils */,
 				14F66C4229C0BB0400B7CC75 /* MVP */,
 				14F66C0E29C0B35E00B7CC75 /* AppDelegate.swift */,
 				14F66C1029C0B35E00B7CC75 /* SceneDelegate.swift */,
 				14F66C1729C0B36000B7CC75 /* Assets.xcassets */,
 				14F66C1929C0B36000B7CC75 /* LaunchScreen.storyboard */,
 				14F66C1C29C0B36000B7CC75 /* Info.plist */,
-				143BDF7629DDCB50000C0EBB /* MyAppConstants.swift */,
 			);
 			path = Getonboard;
 			sourceTree = "<group>";
@@ -823,10 +834,11 @@
 				14F66C7D29C5317700B7CC75 /* CategoryDetailModel.swift in Sources */,
 				14F66C0F29C0B35E00B7CC75 /* AppDelegate.swift in Sources */,
 				14F66C8E29C75A4B00B7CC75 /* CategoryDetailTableViewCell.swift in Sources */,
+				143BDF7A29DE0274000C0EBB /* AppColors.swift in Sources */,
 				14F66C4129C0B8D400B7CC75 /* TabBarController.swift in Sources */,
 				14F66C5929C0F20D00B7CC75 /* CompanyModel.swift in Sources */,
 				14F66C4629C0BB2C00B7CC75 /* CompanyViewController.swift in Sources */,
-				143BDF7729DDCB50000C0EBB /* MyAppConstants.swift in Sources */,
+				143BDF7729DDCB50000C0EBB /* Endpoints.swift in Sources */,
 				14F66C9329C7FB0200B7CC75 /* CategoryDetailTableViewDataSource.swift in Sources */,
 				14F66C8629C5410100B7CC75 /* CategoryDetailPresenterProtocol.swift in Sources */,
 				14F66C8429C53FC100B7CC75 /* CategoryDetailPresenter.swift in Sources */,

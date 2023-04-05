@@ -38,7 +38,7 @@ class CompanyViewController: UIViewController{
         self.navigationItem.setHidesBackButton(true, animated: false)
         self.navigationItem.title = "Compañías Asociadas"
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.init(red: 14/255.0, green: 131/255.0, blue: 136/255.0, alpha: 1)]
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: AppColors.blueCustomColor]
     }
     
     private func companyTableViewSetup(){
@@ -70,7 +70,9 @@ extension CompanyViewController: CompanyPresenterProtocol{
     }
     
     func presentCompanies(companies:  [DataModel]) {
-        self.company = companies
+        self.company = companies.sorted{
+            $0.attributes.name.compare($1.attributes.name) == .orderedAscending
+        }
         DispatchQueue.main.async {
             self.companyTableView.reloadData()
         }

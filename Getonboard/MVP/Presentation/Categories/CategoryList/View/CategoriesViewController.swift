@@ -24,8 +24,8 @@ class CategoryViewController: UIViewController{
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
         self.navigationItem.title = "Categorías de trabajo"
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.init(red: 14/255.0, green: 131/255.0, blue: 136/255.0, alpha: 1)]
+//        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: AppColors.blueCustomColor]
         view.backgroundColor = .white
         presenter.setViewDelegate(delegate: self)
         presenter.getCategories()
@@ -59,7 +59,9 @@ class CategoryViewController: UIViewController{
 extension CategoryViewController: CategoryPresenterProtocol{
     
     func presentCategories(categories: [DataCategory]) {
-        self.categories = categories
+        self.categories = categories.sorted{
+            $0.attributes.name.compare($1.attributes.name) == .orderedAscending
+        }
         DispatchQueue.main.async {
             self.categoryTableView.reloadData()
         }

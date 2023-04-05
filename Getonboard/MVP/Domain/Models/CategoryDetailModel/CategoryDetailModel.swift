@@ -11,5 +11,12 @@ struct CategoryDetailData: Codable {
 
 struct DatumAttributes: Codable {
     let title, description: String
+    let publishedAt: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case title
+        case description
+        case publishedAt = "published_at"
+    }
     
 }
