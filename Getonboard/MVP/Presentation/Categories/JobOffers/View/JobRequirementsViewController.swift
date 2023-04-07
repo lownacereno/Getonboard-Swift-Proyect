@@ -25,13 +25,13 @@ class JobRequirementsViewController: UIViewController{
     
     private func jobRequirementsConstraints(){
         NSLayoutConstraint.activate([
-            titleDescription.topAnchor.constraint(equalTo: view.topAnchor, constant: 30),
-            titleDescription.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
-            titleDescription.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -12),
-            jobTitle.topAnchor.constraint(equalTo: titleDescription.bottomAnchor, constant: 16),
+            jobTitle.topAnchor.constraint(equalTo: view.topAnchor, constant: 30),
             jobTitle.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
-            jobTitle.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -12),
-            jobDescription.topAnchor.constraint(equalTo: jobTitle.bottomAnchor, constant: 30),
+            jobTitle.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -12),
+            titleDescription.topAnchor.constraint(equalTo: jobTitle.bottomAnchor, constant: 16),
+            titleDescription.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
+            titleDescription.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -12),
+            jobDescription.topAnchor.constraint(equalTo: titleDescription.bottomAnchor, constant: 30),
             jobDescription.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             jobDescription.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             submitButton.topAnchor.constraint(equalTo: jobDescription.bottomAnchor, constant: 30),
@@ -52,8 +52,8 @@ class JobRequirementsViewController: UIViewController{
     
     private func titleDescriptionSetup(){
         titleDescription.translatesAutoresizingMaskIntoConstraints = false
-        titleDescription.font = .boldSystemFont(ofSize: 20)
-        titleDescription.textColor = .init(red: 14/255.0, green: 131/255.0, blue: 136/255.0, alpha: 1)
+        titleDescription.font = .systemFont(ofSize: 18)
+        titleDescription.textColor = .black
         titleDescription.numberOfLines = 0
         titleDescription.text = "Requerimientos del cargo"
         view.addSubview(titleDescription)
@@ -61,9 +61,10 @@ class JobRequirementsViewController: UIViewController{
     
     private func jobTitleSetup(){
         jobTitle.translatesAutoresizingMaskIntoConstraints = false
-        jobTitle.font = .systemFont(ofSize: 18)
+        jobTitle.font = .boldSystemFont(ofSize: 20)
         jobTitle.numberOfLines = 0
-        jobTitle.textAlignment = .justified
+        jobTitle.textColor = AppColors.blueCustomColor
+        jobTitle.textAlignment = .center
         view.addSubview(jobTitle)
     }
     
@@ -91,8 +92,6 @@ class JobRequirementsViewController: UIViewController{
         jobDescription.text.self = jobModel.description.htmlToString
         
     }
-    
-    
 }
 
 extension String {

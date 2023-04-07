@@ -2,11 +2,14 @@ import UIKit
 
 class CompanyViewController: UIViewController{
     
-    var company : [DataModel]?
+    var company : [DataModel]? = []
+    var filteredCompany : [DataModel]? = []
     let companyTableView = UITableView()
     private let dataSource : CompanyTableViewDataSource?
     private let delegate : CompanyTableViewDelegate?
     private let presenter = CompanyViewPresenter(companyList: CompanyUseCase())
+    private var searchBarView = UISearchBar()
+    private let companyTitle = UILabel()
     
     init(dataSourceTable: CompanyTableViewDataSource, delegateTable: CompanyTableViewDelegate){
         self.dataSource = dataSourceTable
@@ -23,6 +26,11 @@ class CompanyViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        let logo = UIImage(named: "icon")
+        let image = UIImageView(image: logo)
+        image.contentMode = .scaleAspectFit
+        self.navigationItem.titleView = image
+        searchBarView.delegate = self
         presenter.setViewDelegate(delegate: self)
         presenter.getCompanies()
         initViews()
@@ -30,15 +38,32 @@ class CompanyViewController: UIViewController{
     
     private func initViews(){
         navigationControllerSetup()
+        searchBarSetup()
         companyTableViewSetup()
+        searchBar(searchBarView, textDidChange: "")
+        companyTitleSetup()
         tableViewConstraints()
     }
     
     private func navigationControllerSetup(){
         self.navigationItem.setHidesBackButton(true, animated: false)
         self.navigationItem.title = "Compañías Asociadas"
-        self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: AppColors.blueCustomColor]
+    }
+    
+    private func searchBarSetup(){
+        searchBarView.translatesAutoresizingMaskIntoConstraints = false
+        searchBarView.backgroundColor = .white
+        view.addSubview(searchBarView)
+    }
+    
+    private func companyTitleSetup(){
+        companyTitle.translatesAutoresizingMaskIntoConstraints = false
+        companyTitle.font = .boldSystemFont(ofSize: 20)
+        companyTitle.textColor = AppColors.blueCustomColor
+        companyTitle.numberOfLines = 0
+        companyTitle.text = "Compañías Asociadas"
+        view.addSubview(companyTitle)
     }
     
     private func companyTableViewSetup(){
@@ -52,7 +77,13 @@ class CompanyViewController: UIViewController{
     
     private func tableViewConstraints(){
         NSLayoutConstraint.activate([
-            companyTableView.topAnchor.constraint(equalTo: view.topAnchor),
+            companyTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            companyTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            searchBarView.topAnchor.constraint(equalTo: companyTitle.bottomAnchor, constant: 12),
+            searchBarView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            searchBarView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            searchBarView.heightAnchor.constraint(equalToConstant: 50),
+            companyTableView.topAnchor.constraint(equalTo: searchBarView.bottomAnchor),
             companyTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             companyTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             companyTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
@@ -70,9 +101,10 @@ extension CompanyViewController: CompanyPresenterProtocol{
     }
     
     func presentCompanies(companies:  [DataModel]) {
-        self.company = companies.sorted{
+        self.filteredCompany = companies.sorted{
             $0.attributes.name.compare($1.attributes.name) == .orderedAscending
         }
+        self.company = filteredCompany
         DispatchQueue.main.async {
             self.companyTableView.reloadData()
         }

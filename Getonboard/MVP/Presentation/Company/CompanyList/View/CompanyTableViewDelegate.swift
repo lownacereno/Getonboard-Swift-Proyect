@@ -12,5 +12,3 @@ extension CompanyTableViewDelegate: UITableViewDelegate{
         vc.goToDetail(indexPath: indexPath)
     }
 }
-
-

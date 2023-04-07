@@ -7,6 +7,7 @@ class CategoryViewController: UIViewController{
     private let dataSource : CategoryTableViewDataSource?
     private let delegate : CategoryTableViewDelegate?
     private let presenter = CategoryViewPresenter(categoryList: CategoryListUseCase())
+    private let categoryTitle = UILabel()
     
     init(dataSourceTable: CategoryTableViewDataSource, delegateTable: CategoryTableViewDelegate){
         self.dataSource = dataSourceTable
@@ -23,8 +24,10 @@ class CategoryViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
-        self.navigationItem.title = "Categorías de trabajo"
-//        self.navigationController?.navigationBar.prefersLargeTitles = true
+        let logo = UIImage(named: "icon")
+        let image = UIImageView(image: logo)
+        image.contentMode = .scaleAspectFit
+        self.navigationItem.titleView = image
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: AppColors.blueCustomColor]
         view.backgroundColor = .white
         presenter.setViewDelegate(delegate: self)
@@ -34,6 +37,7 @@ class CategoryViewController: UIViewController{
     
     private func initViews(){
         categoryTableViewSetup()
+        categoryTitleSetup()
         tableViewConstraints()
     }
     
@@ -46,9 +50,20 @@ class CategoryViewController: UIViewController{
         view.addSubview(categoryTableView)
     }
     
+    private func categoryTitleSetup(){
+        categoryTitle.translatesAutoresizingMaskIntoConstraints = false
+        categoryTitle.font = .boldSystemFont(ofSize: 20)
+        categoryTitle.textColor = AppColors.blueCustomColor
+        categoryTitle.numberOfLines = 0
+        categoryTitle.text = "Categorías de empleo"
+        view.addSubview(categoryTitle)
+    }
+    
     private func tableViewConstraints(){
         NSLayoutConstraint.activate([
-            categoryTableView.topAnchor.constraint(equalTo: view.topAnchor),
+            categoryTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            categoryTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            categoryTableView.topAnchor.constraint(equalTo: categoryTitle.bottomAnchor, constant: 12),
             categoryTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             categoryTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             categoryTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
@@ -81,12 +96,3 @@ extension CategoryViewController: CategoryPresenterProtocol{
         present(alert, animated: true, completion: nil)
     }
 }
-
-
-
-
-
-
-
-
-

@@ -7,15 +7,13 @@ class CompanyTableViewDataSource : NSObject{
 extension CompanyTableViewDataSource: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let model = viewController?.company?.count else {return 0}
+        guard let model = viewController?.filteredCompany?.count else {return 0}
         return model
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CompanyTableViewCell", for: indexPath) as? CompanyTableViewCell, let viewController = viewController, let model = viewController.company?[indexPath.row].attributes else {return UITableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CompanyTableViewCell", for: indexPath) as? CompanyTableViewCell, let viewController = viewController, let model = viewController.filteredCompany?[indexPath.row].attributes else {return UITableViewCell()}
         cell.setCellCompanyValue(model: model)
         return cell
     }
 }
-
-

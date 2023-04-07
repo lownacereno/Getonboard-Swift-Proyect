@@ -84,5 +84,101 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE96582F-228F-46F3-A34A-30C727DBFFEE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Getonboard/MVP/Domain/Models/CategoryDetailModel/CategoryDetailModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "DatumAttributes"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "DE96582F-228F-46F3-A34A-30C727DBFFEE - 4a590d8b416bc56d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Getonboard.DatumAttributes.CodingKeys.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;Getonboard.DatumAttributes.CodingKeys&gt;"
+                  moduleName = "Getonboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lowna/Desktop/Proyectos%20iOS/Getonboard/Getonboard/MVP/Domain/Models/CategoryDetailModel/CategoryDetailModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "DE96582F-228F-46F3-A34A-30C727DBFFEE - 78fc39e1728a9557"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Getonboard.DatumAttributes.CodingKeys.rawValue.getter : Swift.String"
+                  moduleName = "Getonboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lowna/Desktop/Proyectos%20iOS/Getonboard/Getonboard/MVP/Domain/Models/CategoryDetailModel/CategoryDetailModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37660DBA-251D-4837-B4BD-A21876C94C11"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Getonboard/MVP/Domain/Models/CategoryDetailModel/CategoryDetailModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "CodingKeys"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  uuid = "37660DBA-251D-4837-B4BD-A21876C94C11 - 4a590d8b416bc56d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Getonboard.DatumAttributes.CodingKeys.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;Getonboard.DatumAttributes.CodingKeys&gt;"
+                  moduleName = "Getonboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lowna/Desktop/Proyectos%20iOS/Getonboard/Getonboard/MVP/Domain/Models/CategoryDetailModel/CategoryDetailModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "37660DBA-251D-4837-B4BD-A21876C94C11 - 78fc39e1728a9557"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Getonboard.DatumAttributes.CodingKeys.rawValue.getter : Swift.String"
+                  moduleName = "Getonboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lowna/Desktop/Proyectos%20iOS/Getonboard/Getonboard/MVP/Domain/Models/CategoryDetailModel/CategoryDetailModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -6,6 +6,7 @@ class TabBarController: UITabBarController {
         super.viewDidLoad()
         tabBar.backgroundColor = AppColors.blueCustomColor
         self.navigationItem.setHidesBackButton(true, animated: true)
+        tabBar.isTranslucent = true
         tabBar.tintColor = .red
         setupTabBar()
     }
